@@ -1,0 +1,84 @@
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/* CONTENT:  
+  TABLES: INVISIBLE and LATEX STYLE
+  BUTTONS --> STYLIZED
+modified: 19-05-21
+
+
+%% in frontmatter %%
+      cssclass: 
+  - invisible-tables
+  - academia
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+
+
+/* ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+To make tables on the current page invisible, use:
+   cssclass: invisible-tables
+   in your frontmatter. */
+
+   .markdown-preview-view.invisible-tables th {
+    padding: 0px!important;
+    border: none;
+}
+.markdown-preview-view.invisible-tables td {
+    padding: 0px!important;
+    border: none;
+}
+.markdown-preview-view.invisible-tables tr:nth-child(odd) {
+      background-color: var(--background-primary)!important;
+}
+.markdown-preview-view.invisible-tables tr:nth-child(even) {
+      background-color: var(--background-primary)!important;
+}
+
+
+
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/* Latex table 
+cssclass: academia*/
+/* ------------------------------------*/
+.academia table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: auto;
+	max-width: 150%;
+	border-top: 2.27px solid black;
+	border-bottom: 2.27px solid black;
+	overflow-x: auto; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+white-space:pre-wrap;
+}
+.academia th,
+.academia td {
+	border: 0 none !important;
+	text-align: left;
+	padding: 0.5rem;
+	line-height: 1.1;
+}
+.academia tr:hover,
+.academia td:hover {
+	background-color: var(--shade-5);
+font-color: var(--text-normal);
+}
+.academia table > tbody > tr:first-child > td,
+.academia table > tbody > tr:first-child > th {
+	border-top: 1.36px solid var(--color-black-rgb)!important;
+}
+.academia table > tbody > tr:last-child > td,
+.academia table > tbody > tr:last-child > th {
+	border-bottom: 1.36px solid var(--color-black-rgb) !important;
+}
+.academia thead th {
+    background-color: var(--background-modifier-accent) !important;
+    font-weight: 700;
+}
+
+.academia tr:nth-child(even) { background-color: var(--background-primary-alt); }
+/* ------------------------------------*/
+/* ------------------------------------*/
+
+
