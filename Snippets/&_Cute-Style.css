@@ -1,0 +1,403 @@
+ 
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*YUNN'S
+S T Y L E 
+-nav pane
+-tag pane
+-bullet tags
+-header line
+-bigger
+
+from its-theme
+mod 20-05-21
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰*/
+
+:root{
+	--color-black-rgb: 15, 17, 26;
+	--color-white-rgb: 229,233,240;
+}
+.theme-light,
+.theme-dark {
+    --accent-90: hsla(var(--accent-hsl), 0.9);
+    --accent-80: hsla(var(--accent-hsl), 0.8);
+    --accent-70: hsla(var(--accent-hsl), 0.7);
+    --accent-60: hsla(var(--accent-hsl), 0.6);
+    --accent-50: hsla(var(--accent-hsl), 0.5);
+    --accent-40: hsla(var(--accent-hsl), 0.4);
+    --accent-30: hsla(var(--accent-hsl), 0.3);
+    --accent-20: hsla(var(--accent-hsl), 0.2);
+    --accent-10: hsla(var(--accent-hsl), 0.1);
+    --accent-5: hsla(var(--accent-hsl), 0.05);
+    --accent-3: hsla(var(--accent-hsl), 0.03);
+    --accent-2: hsla(var(--accent-hsl), 0.02);
+}
+
+
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+NAV FOLDER from ITS-THEME
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+
+
+/*Nav Folder/File Icons*/
+.nav-folder-children .nav-folder-title-content::before {
+    content: '📁'/*\1F5BF*/;
+    color: transparent;
+    text-shadow: 0 0 0 var(--accent-80);
+    margin-right: 4px;
+    font-size: .9em;
+}
+.nav-folder-children .nav-file-title-content::before {
+    content: "📄"/*\1F5D0*/;
+    color: transparent;
+    text-shadow: 0 0 0 var(--shade-80);
+    margin-right: 5px;
+    font-size: .85em;
+}
+
+
+/*Inactive Folder Color*/
+.is-collapsed .nav-folder-title-content:before {
+    text-shadow: 0 0 0 var(--accent-30);
+}
+
+/*Nav Folder Lines*/
+.nav-folder, .nav-file {
+    margin: 0 -2px;
+    margin-right: 0px;
+    border-left: 1px solid var(--accent-20);
+}
+/*Align Folder Line*/
+.nav-folder-children {
+    padding-left: 18px;
+}
+/*Nav Hover Line Colors*/
+.nav-folder:hover,
+.nav-file:hover {
+    border-color: var(--accent-70);
+}
+
+/*Text wrap*/
+.nav-file-title, .nav-folder-title {
+    white-space: normal;
+    width: auto;
+    border-radius: 15px;
+    border: 0;
+}
+
+/*Folder Bold*/
+.nav-folder-title-content {
+    font-weight: 600;
+}
+
+/*Folder Push Left*/
+.nav-folder-title {
+    padding-left: 4px;
+}
+.nav-folder-title:hover {
+    color: var(--accent-90) !important;
+}
+
+/*File Colors|File Under Folder*/
+.nav-file-title {
+    padding-left: 1.8%;
+    color: var(--shade-70);
+}
+.nav-file-title:hover {
+    color: var(--accent-50) !important;
+    font-weight: 600; 
+}
+.nav-folder-children .nav-file-title-content::before{
+    text-shadow: 0 0 0 var(--shade-50);
+}
+
+
+/*File selected*/
+.nav-file-title.is-active {
+    background-color: var(--accent-40);
+    color: var(--fg);
+}
+
+/*Dragged*/
+.nav-folder-title.is-being-dragged-over {
+    border:none;
+    border-radius: 15px;
+}
+
+/*Arrows*/
+.nav-folder .collapse-icon {
+    display: none;
+}
+
+/*Word Wrap Pane*/
+.tree-item-inner {
+    word-wrap: break-word;
+    width: 100%;
+}
+
+
+
+
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+TAG PANE from ITS-THEME
+
+/*--Tag Pane--*/
+/*Text*/
+.tree-item-self {
+    color: var(--shade-80);
+    border-radius: 25px;
+}
+.tag-container .tree-item-self:hover {
+    color: var(--accent-90);
+}
+
+/*Tag Pane Lines*/
+.tag-container .tree-item-children {
+    margin-left: .7em;
+    border-left: 1px solid var(--accent-50);
+    border-bottom: 1px solid var(--shade-2);  /*Removes Dot!!*/
+    transition: all 0.5s ease-in-out;
+    padding: 0;
+}
+
+.tag-container .tree-item-children:hover {
+    border-left: 1px solid var(--accent-70);
+}
+
+/*Outline*/
+/*Set Outline Padding*/
+.outline {
+    margin: .2em .5em;
+    user-select: text;
+}
+/*Outline Pane Lines*/
+.outline .tree-item-children {
+    margin-left: .7em;
+    border-left: 1px solid var(--accent-50);
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+.outline .tree-item-children:hover {
+    border-color: var(--accent-90);
+    border-radius: 20px;
+}
+
+
+
+
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*TAGS*/
+
+.tag {
+    background-color: var(--accent-20);
+    border: 0px  var(--accent-50);
+    border-radius: 5px;
+    color: var(--accent-90);
+    font-size: calc(var(--font-normal) - 1px) !important;
+    padding: 15px 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+/*Hover Underline*/
+
+.markdown-preview-section a.tag:hover{
+    background-color: var(--accent-50);
+text-shadow:none !important;
+    box-shadow:-1px -1px 0 hsl(var(--accent-20)),-1px -1px 0 hsl(var(--accent-20)),-1px -1px 0 hsl(var(--accent-20));
+
+}
+.tag:hover {
+    color: rgb(var(--background-rgb))!important;
+    text-decoration: none!important;
+    font-weight:400;
+}
+/*Editor Tags*/
+.cm-s-obsidian span.cm-hashtag {
+    text-decoration: none;
+    color: var(--accent-80);
+    
+}
+.cm-s-obsidian span.cm-hashtag:hover {
+    text-decoration: none;
+}
+
+
+
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*H E A D E R L I N E
+
+/*Heading Line*/
+h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to right, var(--background-primary), var(--accent-50), var(--background-primary));
+    left: 0;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 85%;
+    height: 3px;
+    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
+    left: 0;
+}
+
+h3:after {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 3px;
+    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
+    left: 0;
+}
+
+h4:after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
+    left: 0;
+}
+
+h5:after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 3px;
+    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
+    left: 0;
+}
+
+h6:after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 3px;
+    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
+    left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: var(--accent-90)!important;
+    letter-spacing: 3px;
+    font-family: Bondi;
+}
+
+h6 {
+    color: var(--accent-90)!important;
+    letter-spacing: 2px;
+    font-family: KG Hard Candy Striped;
+    font-style: normal!important;
+
+}
+
+/*Editor Heading Lines*/
+.cm-s-obsidian pre.HyperMD-header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--accent-30);
+    left: 0;
+}
+
+
+
+
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/* ==================================================================== */
+/* BIGGER PREVIEW                                                               */
+/* ==================================================================== */
+
+  /*============bigger link popup preview  ================*/
+  .popover.hover-popover {
+      position: absolute;
+      z-index: var(--layer-popover);
+      transform: scale(0.9); /* makes the content smaller */
+      max-height: 800px;    /* was 300 */
+      min-height: 100px;
+      width: 500px; /* was 400 */
+      overflow: hidden;      
+      padding: 0;
+      border-bottom: none;
+    }
+  /* I'm not sure what this does, got popove code from Obsdn-Dark-Rmx */
+  /*
+    .popover {
+      background-color: var(--background-primary);
+      border: 1px solid var(--background-primary-alt);
+      box-shadow: 3px 3px 7px var(--background-modifier-box-shadow);
+      border-radius: 6px;
+      padding: 15px 20px 10px 20px;
+      position: relative;
+  }
+  
+  /* remove-tweak the bottom gradient on the popup: remove the gradient or set height to 0 */
+      .popover.hover-popover:after {
+        height: 0px;    
+        background: linear-gradient(to bottom, transparent, var(--background-primary) 80%, var(--background-primary));
+    }
+  
+  /* Colour for pop-up text in ⌘+O */
+  .suggestion-item.is-selected {
+    background-color: blue; /* PB changed from var(--text-accent) */
+    color: whitesmoke;
+  }
+  
+  /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+Line gradient
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰*/
+
+  
+  h1 {
+    text-align: center;
+  }
+
+  
+  .markdown-preview-view hr {
+    margin-block-start: 4em;
+    margin-block-end: 4em;
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--background-primary), var(--accent-50), var(--background-primary));
+  }
+  
+  .markdown-preview-view hr::after {
+    content: '§';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    transform-origin: 50% 50%;
+    padding: 0.5rem;
+    color: var(--text-accent);
+    background-color: var(--background-primary);
+  }
+  
+
+  .small-mermaid .mermaid {
+    transform: scale(0.75);
+  }
+  
+  /*/*/
+  

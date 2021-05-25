@@ -1,0 +1,45 @@
+
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+For the supercharged links
+*/
+
+/*▰ people*/
+/*
+*/
+a.internal-link[
+data-link-category$="people" i]::before{ /*category*/
+content: "🤺 "} /*symbol*/
+
+/*▰ Reference-full */
+/*
+*/
+a.internal-link[
+data-link-category$="Reference-full" i]::before{
+    font-style: normal;
+content: "📖 "}
+
+/*▰ Reference */
+/*
+*/
+a.internal-link[
+data-link-category$="Reference" i]::before{
+    font-style: normal;
+content: "📍 "}
+
+/*
+*/
+ a.internal-link[data-link-next-actions]{ /*to bublle it*/
+    color: white;
+    background-color: rgb(29, 29, 129);
+    border-radius: 18px;
+    padding: 5px 15px;
+}
+
+/*
+*/
+a.internal-link[data-link-next-actions]:hover:after{ /*Hover*/
+    content: " ► "attr(data-link-next-actions)
+}
+
+
