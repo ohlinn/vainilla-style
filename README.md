@@ -1,10 +1,16 @@
 # Vainilla-theme
 My modified snippets for my Obsidian theme.
 
-<img src="/Screenshots/light%20mode.png" width="250"><img src="/Screenshots/dark%20mode.png" width="250">
-## Using
-### Theme and some settings
-  - [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
+<img src="/Screenshots/light%20mode.png" width="49%"> <img src="/Screenshots/dark%20mode.png" width="49%">
+## What I am using.
+### I'm using the [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
+### I used the [Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings) for some snippet settings
+
+### Non-moded snippets
+- [Inline block embeds](https://github.com/deathau/obsidian-snippets/blob/main/inline-block-embeds.css)  
+- Image Flags Snippet by [Lithou](http://github.com/lithou/sandbox)
+- 
+
 #### Fonts:
   - UI font: Poppins Latin
   - Body Font: Atkinson Hyperlegible
@@ -12,7 +18,7 @@ My modified snippets for my Obsidian theme.
   - Monospace font: Victor Mono
 
 ### Plugin for Misc-Kustom snippet settings
-  - [Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings)
+  - 
 ####  Kustom fonts
   - Headers: Bondi
   - Editor font: Victor Mono
@@ -24,14 +30,15 @@ My modified snippets for my Obsidian theme.
 
 ## Snippets
 ##### Pretty highlights
-<img src="/Screenshots/Highlights.png" style="float:right;width:100px"> [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Pretty-Highlights)
+<figure>
+<img src="/Screenshots/Highlights.png" style="float:right;width:100px"><figcaption><a href="https://github.com/chetachiezikeuzor/Obsidian-Snippets#Pretty-Highlights">Source</a></figcaption></figure>
+<figure>
+<img src="/Screenshots/Highlights.png" style="float:right;width:100px"><figcaption><a href="https://github.com/chetachiezikeuzor/Obsidian-Snippets#Pretty-Highlights">Source</a></figcaption></figure>
 
 ##### Image flags
 ![](image flag.png)
-Image Flags Snippet by [Lithou](http://github.com/lithou/sandbox)
 
 ##### Inline block embeds
-[Inline block embeds](https://github.com/deathau/obsidian-snippets/blob/main/inline-block-embeds.css)  
 
 ##### Aside blocks
   modded from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme)
@@ -57,9 +64,7 @@ Vim mode with line focus [Source](https://forum.obsidian.md/t/meta-post-common-c
 }
 ```
 
-![](Screenshots/light%20mode.png|width=100)
-![](Screenshots/dark%20mode.png)
-  
+ 
   #### Nav&tag pane
   mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme)
   #### Bigger preview
