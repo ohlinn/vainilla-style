@@ -1,7 +1,7 @@
 # Vainilla-theme
 My modified snippets for my Obsidian theme.
 
-<img src="/Screenshots/light%20mode.png" style="width:250px"><img src="/Screenshots/dark%20mode.png" style="width:250px">
+<img src="/Screenshots/light%20mode.png" width="250"><img src="/Screenshots/dark%20mode.png" width="250">
 ## Using
 ### Theme and some settings
   - [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
