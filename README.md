@@ -57,7 +57,7 @@ Vim mode with line focus [Source](https://forum.obsidian.md/t/meta-post-common-c
 }
 ```
 
-![](Screenshots/light%20mode.png)
+![](Screenshots/light%20mode.png|width=100)
 ![](Screenshots/dark%20mode.png)
   
   #### Nav&tag pane
