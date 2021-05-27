@@ -1,7 +1,7 @@
 # Vainilla-theme
 My modified snippets for my Obsidian theme.
 
-<img src="/Screenshots/light%20mode.png" style="width250px"><img src="/Screenshots/dark%20mode.png" style="width250px">
+<img src="/Screenshots/light%20mode.png" style="width:250px"><img src="/Screenshots/dark%20mode.png" style="width:250px">
 ## Using
 ### Theme and some settings
   - [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
@@ -24,7 +24,7 @@ My modified snippets for my Obsidian theme.
 
 ## Snippets
 ##### Pretty highlights
-<img src="/Screenshots/Highlights.png" style="float:right;width:200px"> [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Pretty-Highlights)
+<img src="/Screenshots/Highlights.png" style="float:right;width:100px"> [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Pretty-Highlights)
 
 ##### Image flags
 ![](image flag.png)
