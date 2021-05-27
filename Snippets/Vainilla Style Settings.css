@@ -1,6 +1,6 @@
 /*@settings
 
-name: Misc Kustom
+name: Vainilla Style Settings
 id: Kustom
 settings:
     - 
@@ -13,9 +13,19 @@ settings:
         title: Editor font-family
         type: variable-text
         default: default-editor
+    - 
+        id: header-font
+        title: Header font-family
+        type: variable-text
+        default: "Bondi"
+    - 
+        id: header6-font
+        title: Header 6 font-family
+        type: variable-text
+        default: "KG Hard Candy Striped"
     -
         id: font-small
-        title: UI font-siz
+        title: UI font-size
         type: variable-number
         default: 12
         format: px
@@ -264,6 +274,14 @@ settings:
         title: Mermaid Preview
         type: heading
         level: 3
+    -   
+        id: mp-scale
+        title: Scale %
+        type: variable-number-slider
+        default: 100
+        max: 100
+        min: 5
+        step: 5
     -
         id: mp-font
         title: Mermaid  font-family
@@ -282,7 +300,7 @@ settings:
         id: mgp-title
         title: Mermaid Graphs Preview
         type: heading
-        level: 4
+        level: 3
     -
         id: mp-s
         title: Node stroke
@@ -304,6 +322,7 @@ settings:
         title: Node stroke width
         type: variable-number
         default: 0
+        
 */
 
 
@@ -494,5 +513,29 @@ settings:
   font-family:var(--mp-font) !important;
   color: var(--mp-c) !important;
   padding: 0px!important;
+
+}
+
+
+.small-mermaid .mermaid {
+    transform: scale(calc(var(--mp-scale)/100));
+  }
+  
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: var(--accent-90)!important;
+    letter-spacing: 3px;
+    font-family: var(--header-font);
+}
+
+h6 {
+    color: var(--accent-90)!important;
+    letter-spacing: 2px;
+    font-family: var(--header6-font);
+    font-style: normal!important;
 
 }

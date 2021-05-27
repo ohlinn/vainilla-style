@@ -1,0 +1,28 @@
+/* Cursor color in normal vim mode and opacity */
+.cm-fat-cursor .CodeMirror-cursor, .cm-animate-fat-cursor {
+    width: 0.5em!important;
+    background: #d65d0e!important;
+    opacity: 60% !important;
+  }
+  /* LIGHT MODE */
+  /*if you want the highlight to present in both normal and insert mode of vim*/
+  .theme-light /* .cm-fat-cursor */ .CodeMirror-activeline .CodeMirror-linebackground{
+    background-color: #2f2f2f;
+    opacity: 10%
+  }
+  
+  /* DARK MODE */
+  .theme-dark /* .cm-fat-cursor */ .CodeMirror-activeline .CodeMirror-linebackground {
+    background-color: #f1f1f1;
+    opacity: 30%;
+  }
+  /*
+  /*an active line highlight in vim normal mode
+  .cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{
+    background-color:var(--accent-10) !important;
+  }
+  
+  /*if you want the highlight to present in both normal and insert mode of vim
+  .CodeMirror-activeline .CodeMirror-linebackground{
+    background-color: var(--accent-10) !important;
+  }

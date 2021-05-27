@@ -2,9 +2,10 @@
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 For the supercharged links
+T E M P L A T E 
 */
 
-/*▰ people*/
+/*▰ EXAMPLE*/
 /*
 */
 a.internal-link[
@@ -27,7 +28,7 @@ data-link-category$="Reference" i]::before{
     font-style: normal;
 content: "📍 "}
 
-/*
+/* TO BUBBLE IT
 */
  a.internal-link[data-link-next-actions]{ /*to bublle it*/
     color: white;
@@ -36,7 +37,7 @@ content: "📍 "}
     padding: 5px 15px;
 }
 
-/*
+/* SHOW WHEN HOVER
 */
 a.internal-link[data-link-next-actions]:hover:after{ /*Hover*/
     content: " ► "attr(data-link-next-actions)

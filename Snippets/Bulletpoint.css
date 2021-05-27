@@ -1,0 +1,174 @@
+
+
+  
+
+
+
+/*=== Bullet Point Relationship Lines Based on ===*/
+/* https://gist.github.com/emisjerry/cde2fb79bd5a387f0a7934759ea68e9d */
+
+
+.cm-hmd-list-indent .cm-tab, ul ul, ol ol { 
+    position: relative; 
+  }
+  
+  .cm-hmd-list-indent .cm-tab::before, ul ul::before, ol ol::before {
+    content: '';
+    border-left: 2px dotted var(--accent-30);  
+    position: absolute;
+  }
+  
+  /* I can't use this, because it will filter hue everything in the UL, included the images */
+  /* ul:nth-child(2), ol:nth-child(2) {
+    filter: hue-rotate(45deg);
+  } */
+  
+  
+  /* Set color for each lines */
+  
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ul ul::before{
+    filter: hue-rotate(45deg);
+  } 
+  
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ul > li > 
+    ul ul::before{
+    filter: hue-rotate(90deg);
+  } 
+  
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ul > li > 
+    ul > li > 
+    ul ul::before{
+    filter: hue-rotate(135deg);
+  } 
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul ul::before{
+    filter: hue-rotate(170deg);
+  } 
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ul > li > 
+    ul > li > 
+    ul > li >
+    ul > li >
+    ul ul::before{
+    filter: hue-rotate(205deg);
+  } 
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul ul::before{
+    filter: hue-rotate(250deg);
+  } 
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul > li > 
+    ul ul::before{
+    filter: hue-rotate(0deg);
+  } 
+  
+  /* ol:nth-child(2) ol::before{
+    filter: hue-rotate(45deg);
+  } */
+  
+  /* div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > ol > li > ol ol::before{
+    filter: hue-rotate(45deg);
+  } */
+  
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ol > li > 
+    ol::before {
+    filter: hue-rotate(45deg);
+  }
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ol > li > 
+    ol > li > 
+    ol::before {
+    filter: hue-rotate(90deg);
+  }
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol::before {
+    filter: hue-rotate(135deg);
+  }
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol::before {
+    filter: hue-rotate(170deg);
+  }
+  
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol::before {
+    filter: hue-rotate(205deg);
+  }
+  div.markdown-preview-view.allow-fold-headings.allow-fold-lists > div > div > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol > li > 
+    ol::before {
+    filter: hue-rotate(250deg);
+  }
+  
+  .cm-hmd-list-indent .cm-tab:nth-child(1) {
+    filter: hue-rotate(45deg);
+  }
+  .cm-hmd-list-indent .cm-tab:nth-child(2) {
+    filter: hue-rotate(90deg);
+  }
+  .cm-hmd-list-indent .cm-tab:nth-child(3) {
+    filter: hue-rotate(135deg);
+  }
+  .cm-hmd-list-indent .cm-tab:nth-child(4) {
+    filter: hue-rotate(170deg);
+  }
+  .cm-hmd-list-indent .cm-tab:nth-child(5) {
+    filter: hue-rotate(205deg);
+  }
+  .cm-hmd-list-indent .cm-tab:nth-child(6) {
+    filter: hue-rotate(250deg);
+  }
+  .cm-hmd-list-indent .cm-tab:nth-child(7) {
+    filter: hue-rotate(0deg);
+  }
+  
+  .cm-hmd-list-indent .cm-tab::before { 
+    left: 3px; 
+    top: 0px; 
+    bottom: -4px; 
+  }
+  
+  ul ul::before, ol ol::before { 
+    left: -15px; 
+    top: -3px; 
+    bottom: 0;
+  }
+  ol, ul {
+    padding-inline-start: 25px;
+  }
+  
+  
+  
