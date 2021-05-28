@@ -1,15 +1,15 @@
-<h1 align="center"> Vainilla-theme</h1>
+<h1 align="center"> VAINILLA THEME</h1>
 <p align="center">Modded snippets for my personal Obsidian theme.</p>
 
-<p align="center"><img align="center" src="/Screenshots/light-mode.png" width="75%"></br>	
-Light mode</font></p>
-<img align="center" src="/Screenshots/dark-mode.png" width="45%"></p>
-
+<p align="center"><img align="center" src="/Screenshots/light-mode.png" width="75%"></p>
+**LIGHT MODE**
+<img align="center" src="/Screenshots/dark-mode.png" width="75%"></p>
+**DARK MODE**
 
 ## All my snippets mods are adjusted so they can work with the [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
 
 The same accent color selected for the California Coast Theme is used for the colors of some of the snippets.
-
+https://github.com/ohlinn/vainilla-theme/blob/main/Snippets/Admonition-plus.css
 ## [Vainilla Theme Settings](/Snippets/Vainilla_Style_Settings.css)
 <img align="right" src="/Screenshots/vainille.png" width="49%">
 
@@ -95,7 +95,7 @@ I changed the quote style.
 
 
 ## Snippets
-### [Admonition plus](/Snippets/Admonition_plus.css)
+### [Admonition plus](Snippets/Admonition_plus.css)
 
 I modified the title style and the shadow of the admonitions. The rest of the code is from [Admonition-extras](https://github.com/chetachiezikeuzor/Obsidian-Snippets/blob/main/Admonition%20Extras.css).
 
