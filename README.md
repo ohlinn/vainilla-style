@@ -115,7 +115,7 @@ This are an aside note and an inline aside note:
 
 The aside hidden note shows when the bubble is hovered:
 
-<img src="Screenshots/aside-hidden.png" width="49%">    <img src="Screenshots/aside-show.png" width="49%">   
+<img src="Screenshots/aside-hide.png" width="49%">
 
 ### [Bigger Preview](/Snippets/Bigger_preview.css)
 <img src="Screenshots/Bigger-prev.png" width="75%">
@@ -124,13 +124,14 @@ It isn't modified. [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippe
   
 ### [Bullet Point Relationship Lines](Snippets/Bulletpoint.css)
 
-<img src="Screenshots/outliner-preview.png" width="49%"> <img src="Screenshots/outliner-edit.css.png" width="49%">
+<img src="Screenshots/outline.png" width="49%">
+
 
 I modified it so the starting color is the accent one. Also, I changed the line decoration into a dotted one. Original snippet: [Point relationship lines - rainbow colors](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/334)
  
 ### [Checklist](Snippets/Checklist.css)
 
-<img src="Screenshots/checklist-prev.png"> <img src="Screenshots/checklist-edit.png">
+<img src="Screenshots/checklist.png">
 
 This is the [source](https://github.com/deathau/obsidian-snippets/blob/main/checkbox.css). I just changed some colors. 
 
@@ -163,7 +164,7 @@ I changed some of the bullets of the [Org-sidian bullets](https://github.com/san
 
 ### [Stylized buttons](Snippets/Stylized_buttons.css)
 
-<img src="Screenshots/button-light.png" width="250px"> <img src="Screenshots/button-dark.png" width="250px">
+<img src="Screenshots/button.jpg>
 
 This snippet complements the native style settings of the buton plugin. [Source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Buttons%20-%20stylized.md)
 
