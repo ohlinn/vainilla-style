@@ -1,53 +1,111 @@
 :root{
-    --red: #ff5582; /*#ff5582 #ff5555 #ff879f*/
-    --pink: #f2b3cf; /*#f2b3dc #e8b4c2 #e8b4b8;*/
-    --fairpink:	#eed3e1; /*#eed3d5;*/
-    --yellow:	 #fff3a3;
-    --linen: #fcecec;
-    --paleblue: #b5d3ff; /*#b5e1ff #b5d3ff (#bfd9ff; - this is the previous one) #bdd1ef;*/
-    --purple: #d2b3ff; /*#bd93f9 #e5bfff #ecc8fc;*/
-    --palegreen:	#88C0D0 /*#bbfabb*/;
-    --cornflower-blue: #a1c4fd;
-    --light-cornflower-blue: #adccff;
-    --duskblue: #a2acc3; 
-    --gray: #cacfd9;
-    --boldred: #ff5555;
-    --boldyellow: #ffff00;
-    --boldorange: #ffb86c;
-    --boldlightpink: #ffbaeb;
+  
+  
+  /*STABILO HIGHLIGHTS*/
+  --st-pink1: #f7c2d6;
+  --st-pink2: #fb83b3;
+  --st-pink3: #F8B6A8;
+  --st-red: #f8877f;
+  --st-purple: #c3bbec;
+  --st-green: #a7e8c8;
+  --st-green2: #77e68a;
+  
+  /*MATERIAL OCEAN COLORS*/
+  --m-red: #BF616A;
+  --m-yellow: #EBCB8B;
+  --m-clearblue: #88C0D0;
+  --m-blue: #81A1C1;
+  --m-purple: #A48EAD;
+  --m-bluegray: #4C566A;
+  --m-white: #E5E9F0;
+  --m-bluegray2: #3B4252;
+  --m-secondary: #00010A;
+  --m-accent: #3A575C;
+  --m-primary: #0F111A;
+  --m-green: #A3BE8C;
+
+  /*RED*/
+  --red1: #ff5582;
+  --red2: #ff5555;
+  --red3: #ff879f;
+  --boldred: #d4b6b6;
+
+
+  /*PINK*/
+  --pink: #f2b3cf; 
+  --pink1: #f2b3dc;
+  --pink2: #e8b4c2;
+  --pink3: #e8b4b8;
+  --fairpink: #eed3e1;
+  --fairpink2: #eed3d5;
+  --boldlightpink: #ffbaeb;
+
+/*YELLOW*/
+  --yellow: #fff3a3;
+  --linen: #fcecec;
+  --boldyellow: #ffff00;
+  --boldorange: #ffb86c;
+  --orange: #FFAd2a;
+
+/*BLUE*/
+  --paleblue: #b5d3ff; 
+  --pale2: #b5e1ff; 
+  --pale3: #b5d3ff;
+  --pale4: #bfd9ff;
+  --pale5: #bdd1ef;
+  --cornflower-blue: #a1c4fd;
+  --light-cornflower-blue: #adccff;
+
+/*PURPLE*/
+  --purple: #d2b3ff; 
+  --purple2: #bd93f9; 
+  --purple3: #e5bfff; 
+  --purple4: #ecc8fc;
+
+/*GREEN*/
+  --palegreen: #88C0D0; 
+  --palegreen2: #bbfabb;
+
+/*GREY*/
+  --duskblue: #a2acc3; 
+  --gray: #cacfd9;
+
 }
+.theme-light{
+    /*----------------------------------------------------------------
+    HIGHLIGHTERS FOR LIGHT
+    ----------------------------------------------------------------*/
+    --yellow-highlighter: var(--m-yellow);
+    --pink-highlighter: var(--st-pink3);
+    --red-highlighter: var(--red2);
+    --blue-highlighter: var(--cornflower-blue);
+    --green-highlighter: var(--st-green2);
+    --purple-highlighter: var(--purple);
+    --orange-highlighter: var(--orange);
+    --grey-highlighter: var(--duskblue);
+    --aqua-highlighter: var(--m-clearblue);
+
+    --text-highlight-rgb:var(--m-red);
+	  --text-highlight-color:var(--m-primary);
+}
+
 
 .theme-dark{
     /*----------------------------------------------------------------
-    HIGHLIGHTERS FOR DARK
+    HIGHLIGHTERS  DARK
     ----------------------------------------------------------------*/
     --yellow-highlighter: var(--yellow);
-    --pink-highlighter:	 var(--pink);
-    --red-highlighter:	 var(--red);
-    --blue-highlighter:	 var(--paleblue);
-    --green-highlighter: var(--palegreen);
-    --purple-highlighter:	 var(--purple);
+    --pink-highlighter: var(--boldlightpink);
+    --red-highlighter: VAR(--st-red);
+    --blue-highlighter:var(--light-cornflower-blue);
+    --green-highlighter: var(--st-green);
+    --purple-highlighter: var(--st-purple);
     --orange-highlighter: var(--boldorange);
     --grey-highlighter: var(--gray);
+    --aqua-highlighter: var(--palegreen);
 
-    --text-highlight-rgb: #81A1C1;
-	--text-highlight-color: #00010A;
-}
-
-.theme-light{
-    /*----------------------------------------------------------------
-    HIGHLIGHTERS 
-    ----------------------------------------------------------------*/
-    --yellow-highlighter: var(--boldyellow);
-    --pink-highlighter:	 var(--boldlightpink);
-    --red-highlighter: var(--boldred);
-    --blue-highlighter:	var(--paleblue);
-    --green-highlighter: var(--palegreen);
-    --purple-highlighter:	var(--linen);
-    --orange-highlighter: var(--boldorange);
-    --grey-highlighter: var(--duskblue);
-
-    --text-highlight-rgb: var(--light-cornflower-blue);
+	  --text-highlight-color:var(--m-primary);
+    --text-highlight-rgb: var(--m-blue);
 }
 
 /*----------------------------------------------------------------
@@ -92,6 +150,7 @@ mark.grey{ --text-highlight-rgb: var(--grey-highlighter);  }
 mark.orange{ --text-highlight-rgb: var(--orange-highlighter);  }
 mark.red{ --text-highlight-rgb: var(--red-highlighter);  }
 mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
+mark.aqua{ --text-highlight-rgb: var(--aqua-highlighter);  }
 
 .markdown-preview-view mark {
     margin: 0 -0.25em; 
@@ -150,3 +209,5 @@ mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 }
+
+
