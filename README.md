@@ -1,12 +1,12 @@
 <h1 align="center">VAINILLA STYLE</h1>
 <p align="center">Modded snippets for my personal Obsidian theme.</p>
 
-<p align="center"><img src="Screenshots/light-mode.png" width="75%"> </br>
-<img src="Screenshots/Editor-light.png" width="75%"></br>
+<p align="center"><img src="Screenshots/light-mode.png" width="85%"> </br>
+<img src="Screenshots/Editor-light.png" width="85%"></br>
 Light mode
 </br> </br>
-<img src="Screenshots/dark-mode.png" width="75%"> </br>
-<img src="Screenshots/editor-dark.png" width="75%"> </br> </br>
+<img src="Screenshots/dark-mode.png" width="85%"> </br>
+<img src="Screenshots/editor-dark.png" width="85%"> </br> </br>
 Dark mode</p>
 
 ## ABOUT
@@ -17,7 +17,7 @@ Dark mode</p>
 - [Vainille Style (Snippets and modifications I used)](#vainilla-style-snippets)
 - [Individual Snippets](#snippets)
 
-<img align="right" src="Screenshots/vainille.png" width="49%">
+<img align="right" src="Screenshots/vainille.png" width="40%">
 
 ## [Vainilla Style Settings](Snippets/Vainilla_Style_Settings.css)
 
@@ -41,7 +41,7 @@ With it, is posible to define:
 - Select the mermaid scale.
 
 
-<img align="center" src="Screenshots/mermaid.png" width="50%">    
+<img align="center" src="Screenshots/mermaid.png" width="40%">    
 
 
 
@@ -82,20 +82,20 @@ Here is where I made some visual changes.
 It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme).
 Tags have a bullet style only in preview mode. It doesn't affect the tag pane.
 
-<img align="right" src="Screenshots/navpanel.png" height="75%">
+<img align="right" src="Screenshots/navpanel.png" width="35%">
 <img src="Screenshots/Tags.png" width="55%">
 
 
 ### Header and horizontal lines
 Based on the horizontal gradient line in Preview [source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Lines%20-%20horizontal.md), I also added lines after each of th headings:
 
-<img src="Screenshots/header-preview.png" width="75%"> 
+<img src="Screenshots/header-preview.png"> 
 
 
 ### Quotes
 I changed the quote style.
 
-<img src="Screenshots/quote.png" width="75%">
+<img src="Screenshots/quote.png">
 
 
 ## Snippets
@@ -103,7 +103,7 @@ I changed the quote style.
 
 I modified the title style and the shadow of the admonitions. The rest of the code is from [Admonition-extras](https://github.com/chetachiezikeuzor/Obsidian-Snippets/blob/main/Admonition%20Extras.css).
 
-<img src="Screenshots/admonition-cite.png" width="49%"><img src="Screenshots/admonition-information.png" width="49%">
+<img src="Screenshots/admonition-cite.png" width="49%" ><img src="Screenshots/admonition-information.png" width="49%">
 
 
 
@@ -111,20 +111,20 @@ I modified the title style and the shadow of the admonitions. The rest of the co
 I modified the [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme) snippet. I changed the shadow style and the italic of the hiden note.
 This are an aside note and an inline aside note:
 
-<img src="Screenshots/aside.png" width="75%">
+<img src="Screenshots/aside.png">
 
 The aside hidden note shows when the bubble is hovered:
 
-<img src="Screenshots/aside-hide.png" width="49%">
+<img src="Screenshots/aside-hide.png">
 
 ### [Bigger Preview](/Snippets/Bigger_preview.css)
-<img src="Screenshots/Bigger-prev.png" width="75%">
+<img src="Screenshots/Bigger-prev.png">
 
 It isn't modified. [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Bigger-Popovers).
   
 ### [Bullet Point Relationship Lines](Snippets/Bulletpoint.css)
 
-<img src="Screenshots/outline.png" width="49%">
+<img src="Screenshots/outline.png">
 
 
 I modified it so the starting color is the accent one. Also, I changed the line decoration into a dotted one. Original snippet: [Point relationship lines - rainbow colors](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/334)
@@ -137,20 +137,20 @@ This is the [source](https://github.com/deathau/obsidian-snippets/blob/main/chec
 
 ### [Image flags](Snippets/Image_Flags_Lithou.css)
 
-<img src="Screenshots/image-flag.png" width="49%">
+<img src="Screenshots/image-flag.png">
 
 - Image Flags Snippet by [Lithou](http://github.com/lithou/sandbox)
 - Almost no modifications.
 
 ### [Inline block embeds](Snippets/Inline_block_embed.css)
 
-<img src="Screenshots/inline.png" width="49%">
+<img src="Screenshots/inline.png">
 
 It isn't modified. From [here](https://github.com/deathau/obsidian-snippets/blob/main/inline-block-embeds.css)  
 
 ### [Orgsidian](Snippets/orgsidian.css)
 
-<img src="Screenshots/header-edit.png" width="75%">
+<img src="Screenshots/header-edit.png">
 
 I changed some of the bullets of the [Org-sidian bullets](https://github.com/santiyounger/Org-sidian-Bullets).
 
@@ -164,7 +164,7 @@ I changed some of the bullets of the [Org-sidian bullets](https://github.com/san
 
 ### [Stylized buttons](Snippets/Stylized_buttons.css)
 
-<img src="Screenshots/button.jpg>
+<img src="Screenshots/button.jpg">
 
 This snippet complements the native style settings of the buton plugin. [Source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Buttons%20-%20stylized.md)
 
@@ -172,21 +172,21 @@ This snippet complements the native style settings of the buton plugin. [Source]
 
 This is how default tables look:
 
-<img src="Screenshots/table-default.png" width="49%">
+<img src="Screenshots/table-default.png">
 
 This is the [Tables invisibile cssclass](https://github.com/PurpleGuitar/obsidian-snippets/blob/main/tables-invisible-cssclass.css) snippet. 
 Adding `cssclass: invisible` to the YAML, it looks this way:
 
-<img src="Screenshots/table-transparent.png" width="49%">
+<img src="Screenshots/table-transparent.png">
 
 I modified the [Tables that look like latex tables](https://forum.obsidian.md/t/obsidian-tables-that-look-like-latex-tables-with-css/16683) snippet so it matches with the accent colors. 
 The YAML must contain: ```cssclass: academia```: 
 
-<img src="Screenshots/table-academia.png" width="49%">
+<img src="Screenshots/table-academia.png">
 
 ### [VIM MODE](Snippets/Vim-line.css)
 
-<img src="Screenshots/Vim.png" width="49%">
+<img src="Screenshots/Vim.png">
 
 Vim mode with line focus. [Source](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/17) No mod.
 
