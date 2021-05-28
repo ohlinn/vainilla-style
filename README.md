@@ -77,12 +77,12 @@ Here is where I made some visual changes.
     --accent-2: hsla(var(--accent-hsl), 0.02);
 }
 ```
+<img align="right" src="Screenshots/navpanel.png" width="35%">
 
 ### Nav&Tag pane
 It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme).
 Tags have a bullet style only in preview mode. It doesn't affect the tag pane.
 
-<img align="right" src="Screenshots/navpanel.png" width="35%">
 <img src="Screenshots/Tags.png" width="55%">
 
 
@@ -90,7 +90,6 @@ Tags have a bullet style only in preview mode. It doesn't affect the tag pane.
 Based on the horizontal gradient line in Preview [source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Lines%20-%20horizontal.md), I also added lines after each of th headings:
 
 <img src="Screenshots/header-preview.png"> 
-
 
 ### Quotes
 I changed the quote style.
