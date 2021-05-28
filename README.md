@@ -1,14 +1,17 @@
-# Vainilla-theme
-Modded snippets for my personal Obsidian theme.
+<h1 align="center"> Vainilla-theme</h1>
+<p align="center">Modded snippets for my personal Obsidian theme.</p>
 
-<img src="/Screenshots/light-mode.png" width="49%"> <img src="/Screenshots/dark-mode.png" width="49%">
+<p align="center"><img align="center" src="/Screenshots/light-mode.png" width="75%"></br>	
+Light mode</font></p>
+<img align="center" src="/Screenshots/dark-mode.png" width="45%"></p>
 
 
 ## All my snippets mods are adjusted so they can work with the [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
-- The same accent color selected for the California Coast Theme is used for the colors of some of the snippets.
+
+The same accent color selected for the California Coast Theme is used for the colors of some of the snippets.
 
 ## [Vainilla Theme Settings](/Snippets/Vainilla_Style_Settings.css)
-<img src="/Screenshots/vainille.png" width="49%" float="left">
+<img align="right" src="/Screenshots/vainille.png" width="49%">
 
 It works using the [Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings).
 With it, is posible to define:
@@ -16,31 +19,39 @@ With it, is posible to define:
 - Headers (and H6) preview font family
 - Change the UI font size.
 - General text-align.
+
+
+<img src="/Screenshots/Editor-light.png" width="75%">
+<img src="/Screenshots/editor-dark.png" width="75%"> 
+
+
 ### EDITOR settings:
 - Choose between the accent, mute and normal color for the markdown rendering color (`**`,`__`, `[[]]`) and footnotes.
 - The font-family and font-style for the `[Text in brackets]`, the code font-family, the inline font-style and the code color.
+
 ### PREVIEW settings:
 - Change the font-family, font-style and font-decoration of internal links, external links, code and tags.
-<img src="/Screenshots/Editor-light.png" width="75%">
-
-<img src="/Screenshots/editor-dark.png" width="75%"> 
 
 ### MERMAID settings:
 - Change the mermaid font-family, font-color and node stroke, node stroke width and the fill-color of the nodes.
 - Select the mermaid scale.
+
 <img src="/Screenshots/mermaid.png" width="49%">
 
 
 ## [Vainilla Style](/Snippets/Vainilla_Style.css) (snippets)
 Here is where I made some visual changes.
+
 ### Colors
 - I changed the background and foreground color, based in the [Material Ocean](https://github.com/material-ocean) color scheme.
+
 ```
   :root{
 	--color-black-rgb: 15, 17, 26;
 	--color-white-rgb: 229,233,240;
 }
 ```
+
 - I added some variables to work with shades of the accent color.
 ```
 .theme-light,
@@ -60,58 +71,80 @@ Here is where I made some visual changes.
 }
 ```
 ### Nav & tag pane
-It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme)
-<img src="/Screenshots/navpanel.png" height="300px">
+It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme).
+
+<img src="/Screenshots/navpanel.png" height="450px">
+
 
 ### Tags
-<img src="/Screenshots/tags.png" width="49%">
 Tags have a bullet style only in preview mode. It doesn't affect the tag pane.
-  
+
+<img src="/Screenshots/Tags.png" width="49%">
+
+
 ### Header and horizontal lines
 Based on the horizontal gradient line in Preview [source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Lines%20-%20horizontal.md), I also added lines after each of th headings:
+
 <img src="/Screenshots/header-preview.png" width="49%"> 
+
 
 ### Quotes
 I changed the quote style.
+
 <img src="/Screenshots/quote.png" width="49%">
 
 
 ## Snippets
 ### [Admonition plus](/Snippets/Admonition_plus.css)
+
+I modified the title style and the shadow of the admonitions. The rest of the code is from [Admonition-extras](https://github.com/chetachiezikeuzor/Obsidian-Snippets/blob/main/Admonition%20Extras.css).
+
 <img src="/Screenshots/admonition-cite.png" width="49%"><img src="/Screenshots/admonition-information.png" width="49%">
-I modified the title style and the shadow of the admonitions. The rest of the code is from [Admonition-extras](https://github.com/chetachiezikeuzor/Obsidian-Snippets/blob/main/Admonition%20Extras.css)
+
 
 
 ### [Aside blocks](/Snippets/Aside.css)
 I modified the [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme) snippet. I changed the shadow style and the italic of the hiden note.
 This are an aside note and an inline aside note:
+
 <img src="/Screenshots/aside.png" width="49%">
 
 The aside hidden note shows when the bubble is hovered:
+
 <img src="/Screenshots/aside-show.png" width="49%"> <img src="/Screenshots/aside-hidden.png" width="49%">
 
 ### [Bigger Preview](/Snippets/Bigger_preview.css)
 <img src="/Screenshots/Bigger-preview.png" width="49%">
-It isn't modified. [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Bigger-Popovers)
+
+It isn't modified. [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Bigger-Popovers).
   
 ### [Bullet Point Relationship Lines](/Snippets/Bulletpoint.css)
+
 <img src="/Screenshots/outliner-preview.png" width="49%"> <img src="/Screenshots/outliner-edit.css.png" width="49%">
+
 I modified it so the starting color is the accent one. Also, I changed the line decoration into a dotted one. Original snippet: [Point relationship lines - rainbow colors](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/334)
  
 ### [Checklist](/Snippets/Checklist.css)
+
 <img src="/Screenshots/checklist.png" width="49%"> <img src="/Screenshots/checklist-edit.png" width="49%">
+
 This is the [source](https://github.com/deathau/obsidian-snippets/blob/main/checkbox.css). I just changed some colors. 
 
 ### [Image flags](/Snippets/Image_Flags_Lithou.css)
+
 <img src="/Screenshots/image-flag.png" width="49%">
+
 - Image Flags Snippet by [Lithou](http://github.com/lithou/sandbox)
 - Almost no modifications.
 
 ### [Inline block embeds](/Snippets/Inline_block_embed.css)
+
 <img src="/Screenshots/inline.png" width="49%">
+
 It isn't modified. From [here](https://github.com/deathau/obsidian-snippets/blob/main/inline-block-embeds.css)  
 
 ### [Orgsidian](/Snippets/orgsidian.css)
+
 <img src="/Screenshots/header-edit.png" width="49%">
 
 I changed some of the bullets of the [Org-sidian bullets](https://github.com/santiyounger/Org-sidian-Bullets).
