@@ -1,66 +1,63 @@
 # Vainilla-theme
 Modded snippets for my personal Obsidian theme.
-<img src="/Screenshots/light-mode.png" width="49%"><img src="/Screenshots/dark-mode.png" width="49%">
+
+<img src="/Screenshots/light-mode.png" width="49%"> <img src="/Screenshots/dark-mode.png" width="49%">
 
 
 ## All my snippets mods are adjusted so they can work with the [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
 - The same accent color selected for the California Coast Theme is used for the colors of some of the snippets.
 
-## Vainilla theme
-They are two snippets.
-### Vainilla theme Settings
-It works using the [Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings)
-<img src="/Screenshots/Vainilla Style settings.png" width="49%">
+### Vainilla Theme Settings
+<img src="/Screenshots/vainille.png" width="49%" float="left">
+
+It works using the [Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings).
 With it, is posible to define:
-	- A different font family for the editor.
-	- Headers (and H6) preview font family
-	- Change the UI font size.
-	- General text-align.
-	- EDITOR
-  	- Choose between the accent, mute and normal color for the markdown rendering color (**, __, [[" width="49%">) and footnotes.
-  	- The font-family and font-style for the [Text in brackets], the code font-family, the inline font-style and the code color.
-	- PREVIEW
-  	- Change the font-family, font-style and font-decoration of
-    	- internal links, external links, code, tag. 
+- A different font family for the editor.
+- Headers (and H6) preview font family
+- Change the UI font size.
+- General text-align.
+#### EDITOR settings:
+- Choose between the accent, mute and normal color for the markdown rendering color (`**`,`__`, `[[]]`) and footnotes.
+- The font-family and font-style for the `[Text in brackets]`, the code font-family, the inline font-style and the code color.
+#### PREVIEW settings:
+- Change the font-family, font-style and font-decoration of internal links, external links, code and tags.
+<img src="/Screenshots/Editor-light.png" width="75%">
+
+<img src="/Screenshots/editor-dark.png" width="75%"> 
+
+#### MERMAID settings:
+- Change the mermaid font-family, font-color and node stroke, node stroke width and the fill-color of the nodes.
+- Select the mermaid scale.
+<img src="/Screenshots/mermaid.png" width="49%">
 
 
-<img src="/Screenshots/editor-dark.png" width="49%"> <img src="/Screenshots/Editor-clear.png" width="49%">
-
-
-  - MERMAID
-  - Change the mermaid font-family, font-color and node stroke, node stroke width and the fill-color of the nodes.
-  - Select the mermaid scale.
-  <img src="/Screenshots/mermaid.png" width="49%">
-
-#### Fonts:
-  - UI font: Poppins Latin
-  - Body Font: Atkinson Hyperlegible
-  - body font features: Niramit
-  - Monospace font: Victor Mono
-
-### Plugin for Misc-Kustom snippet settings
-  - 
-####  Kustom fonts
-  - Headers: Bondi
-  - Editor font: Victor Mono
-  - \[In brackets font]: Ticketing
-  - Tag font: Unica One
-  - Internal links: KG Hard Candy Striped
-  - External links: Trochut
-  - Mermaid font: Alegreya Sans SC
-
-#### Vainilla theme snippets
-
-##### Vainilla theme
-
-  - Base color from California Coast changed, based in material ocean.
+## Vainilla Theme (snippets)
+This is where I made some visual changes.
+1. I changed the background and foreground color, based in the [Material Ocean](https://github.com/material-ocean) color scheme.
 ```
   :root{
 	--color-black-rgb: 15, 17, 26;
 	--color-white-rgb: 229,233,240;
 }
 ```
-- I added some variables to work with shades of the accent color. 
+2. I added some variables to work with shades of the accent color.
+```
+.theme-light,
+.theme-dark {
+    --accent-90: hsla(var(--accent-hsl), 0.9);
+    --accent-80: hsla(var(--accent-hsl), 0.8);
+    --accent-70: hsla(var(--accent-hsl), 0.7);
+    --accent-60: hsla(var(--accent-hsl), 0.6);
+    --accent-50: hsla(var(--accent-hsl), 0.5);
+    --accent-40: hsla(var(--accent-hsl), 0.4);
+    --accent-30: hsla(var(--accent-hsl), 0.3);
+    --accent-20: hsla(var(--accent-hsl), 0.2);
+    --accent-10: hsla(var(--accent-hsl), 0.1);
+    --accent-5: hsla(var(--accent-hsl), 0.05);
+    --accent-3: hsla(var(--accent-hsl), 0.03);
+    --accent-2: hsla(var(--accent-hsl), 0.02);
+}
+```
   
   #### Nav&tag pane
   mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme)
@@ -149,4 +146,24 @@ I changed some of the bullets.
 <img src="/Screenshots/Vim.png" width="49%">
 
 Vim mode with line focus [Source](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/17) No mod.
+
+
+
+
+#### Fonts:
+  - UI font: Poppins Latin
+  - Body Font: Atkinson Hyperlegible
+  - body font features: Niramit
+  - Monospace font: Victor Mono
+
+### Plugin for Misc-Kustom snippet settings
+  - 
+####  Kustom fonts
+  - Headers: Bondi
+  - Editor font: Victor Mono
+  - \[In brackets font]: Ticketing
+  - Tag font: Unica One
+  - Internal links: KG Hard Candy Striped
+  - External links: Trochut
+  - Mermaid font: Alegreya Sans SC
 
