@@ -13,9 +13,9 @@ Dark mode</p>
 - All my snippets mods are adjusted so they can work with the [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme). 
 - The same accent color selected for the California Coast Theme is used for the colors of some of the snippets.
 - One snippet works using the [Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings).
-- [Vainille Style Settings (my personal modifications)]
-- [Vainille Style (Snippets and modifications I used)]
-- [Individual Snippets]
+- [Vainille Style Settings (my personal modifications)](#vainilla-style-settings)
+- [Vainille Style (Snippets and modifications I used)](#vainilla-style-snippets)
+- [Individual Snippets](#snippets)
 
 <img align="right" src="Screenshots/vainille.png" width="49%">
 
@@ -154,6 +154,7 @@ It isn't modified. From [here](https://github.com/deathau/obsidian-snippets/blob
 I changed some of the bullets of the [Org-sidian bullets](https://github.com/santiyounger/Org-sidian-Bullets).
 
 ### [Pretty highlights](Snippets/Pretty_highlights.css)
+
 <img src="Screenshots/highlights.png"> 
 
 - Original snippet [here](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Pretty-Highlights).
@@ -162,7 +163,7 @@ I changed some of the bullets of the [Org-sidian bullets](https://github.com/san
 
 ### [Stylized buttons](Snippets/Stylized_buttons.css)
 
-<img src="Screenshots/button-light.png" height="250px"> <img src="Screenshots/button-dark.png" height="250px">
+<img src="Screenshots/button-light.png" width="250px"> <img src="Screenshots/button-dark.png" width="250px">
 
 This snippet complements the native style settings of the buton plugin. [Source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Buttons%20-%20stylized.md)
 
