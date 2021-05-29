@@ -77,19 +77,20 @@ Here is where I made some visual changes.
     --accent-2: hsla(var(--accent-hsl), 0.02);
 }
 ```
-<img align="right" src="Screenshots/navpanel.png" height="55%">
 
 ### Nav&Tag pane
 It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme).
 Tags have a bullet style only in preview mode. It doesn't affect the tag pane.
 
-<img src="Screenshots/Tags.png" width="55%">
+<img align="right" src="Screenshots/navpanel.png">
+<img src="Screenshots/Tags.png">
 
 
 ### Header and horizontal lines
 Based on the horizontal gradient line in Preview [source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Lines%20-%20horizontal.md), I also added lines after each of th headings:
 
 <img src="Screenshots/header-preview.png"> 
+
 
 ### Quotes
 I changed the quote style.
@@ -114,7 +115,9 @@ This are an aside note and an inline aside note:
 
 The aside hidden note shows when the bubble is hovered:
 
-<img src="Screenshots/aside-hide.png">
+<img src="Screenshots/aside-hidden.png">
+<img src="Screenshots/aside-show.png">
+
 
 ### [Bigger Preview](/Snippets/Bigger_preview.css)
 <img src="Screenshots/Bigger-prev.png">
@@ -123,14 +126,17 @@ It isn't modified. [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippe
   
 ### [Bullet Point Relationship Lines](Snippets/Bulletpoint.css)
 
-<img src="Screenshots/outline.png">
+<img src="Screenshots/outliner-preview.png"><img src="Screenshots/outliner-edit.png">
+
+
 
 
 I modified it so the starting color is the accent one. Also, I changed the line decoration into a dotted one. Original snippet: [Point relationship lines - rainbow colors](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/334)
  
 ### [Checklist](Snippets/Checklist.css)
 
-<img src="Screenshots/checklist.png">
+<img src="Screenshots/checklist-edit.png"><img src="Screenshots/checklist-prev.png">
+
 
 This is the [source](https://github.com/deathau/obsidian-snippets/blob/main/checkbox.css). I just changed some colors. 
 
@@ -163,7 +169,8 @@ I changed some of the bullets of the [Org-sidian bullets](https://github.com/san
 
 ### [Stylized buttons](Snippets/Stylized_buttons.css)
 
-<img src="Screenshots/button.jpg">
+<img src="Screenshots/button-dark.png"><img src="Screenshots/button-light.png">
+
 
 This snippet complements the native style settings of the buton plugin. [Source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Buttons%20-%20stylized.md)
 
