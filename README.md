@@ -169,7 +169,7 @@ I changed some of the bullets of the [Org-sidian bullets](https://github.com/san
 
 ### [Stylized buttons](Snippets/Stylized_buttons.css)
 
-<img src="Screenshots/button-dark.png"><img src="Screenshots/button-light.png">
+<img src="Screenshots/Button-dark.png"><img src="Screenshots/Button-light.png">
 
 
 This snippet complements the native style settings of the buton plugin. [Source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Buttons%20-%20stylized.md)
