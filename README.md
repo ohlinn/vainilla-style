@@ -77,7 +77,7 @@ Here is where I made some visual changes.
     --accent-2: hsla(var(--accent-hsl), 0.02);
 }
 ```
-<img align="right" src="Screenshots/navpanel.png" width="35%">
+<img align="right" src="Screenshots/navpanel.png" height="55%">
 
 ### Nav&Tag pane
 It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme).
