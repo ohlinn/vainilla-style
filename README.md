@@ -82,20 +82,20 @@ Here is where I made some visual changes.
 It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme).
 Tags have a bullet style only in preview mode. It doesn't affect the tag pane.
 
-<img align="right" src="Screenshots/navpanel.png">
-<img src="Screenshots/Tags.png">
+<img src="Screenshots/navpanel.png" width="200px">
+<img src="Screenshots/Tags.png" width="400px">
 
 
 ### Header and horizontal lines
 Based on the horizontal gradient line in Preview [source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Lines%20-%20horizontal.md), I also added lines after each of th headings:
 
-<img src="Screenshots/header-preview.png"> 
+<img src="Screenshots/header-preview.png" width="600px"> 
 
 
 ### Quotes
 I changed the quote style.
 
-<img src="Screenshots/quote.png">
+<img src="Screenshots/quote.png"  width="600px">
 
 
 ## Snippets
@@ -103,7 +103,8 @@ I changed the quote style.
 
 I modified the title style and the shadow of the admonitions. The rest of the code is from [Admonition-extras](https://github.com/chetachiezikeuzor/Obsidian-Snippets/blob/main/Admonition%20Extras.css).
 
-<img src="Screenshots/admonition-cite.png" width="49%" ><img src="Screenshots/admonition-information.png" width="49%">
+<img src="Screenshots/admonition-cite.png"  width="600px" >
+<img src="Screenshots/admonition-information.png"  width="600px">
 
 
 
@@ -111,22 +112,22 @@ I modified the title style and the shadow of the admonitions. The rest of the co
 I modified the [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme) snippet. I changed the shadow style and the italic of the hiden note.
 This are an aside note and an inline aside note:
 
-<img src="Screenshots/aside.png">
+<img src="Screenshots/aside.png"  width="600px">
 
 The aside hidden note shows when the bubble is hovered:
 
-<img src="Screenshots/aside-hidden.png">
-<img src="Screenshots/aside-show.png">
+<img src="Screenshots/aside-hidden.png"  width="600px">
+<img src="Screenshots/aside-show.png"  width="600px">
 
 
 ### [Bigger Preview](/Snippets/Bigger_preview.css)
-<img src="Screenshots/Bigger-prev.png">
+<img src="Screenshots/Bigger-prev.png"  width="600px">
 
 It isn't modified. [Source](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Bigger-Popovers).
   
 ### [Bullet Point Relationship Lines](Snippets/Bulletpoint.css)
 
-<img src="Screenshots/outliner-preview.png"><img src="Screenshots/outliner-edit.png">
+<img src="Screenshots/outliner-preview.png"  width="300px"><img src="Screenshots/outliner-edit.png"  width="300px">
 
 
 
@@ -142,26 +143,26 @@ This is the [source](https://github.com/deathau/obsidian-snippets/blob/main/chec
 
 ### [Image flags](Snippets/Image_Flags_Lithou.css)
 
-<img src="Screenshots/image-flag.png">
+<img src="Screenshots/image-flag.png"  width="600px">
 
 - Image Flags Snippet by [Lithou](http://github.com/lithou/sandbox)
 - Almost no modifications.
 
 ### [Inline block embeds](Snippets/Inline_block_embed.css)
 
-<img src="Screenshots/inline.png">
+<img src="Screenshots/inline.png"  width="600px">
 
 It isn't modified. From [here](https://github.com/deathau/obsidian-snippets/blob/main/inline-block-embeds.css)  
 
 ### [Orgsidian](Snippets/orgsidian.css)
 
-<img src="Screenshots/header-edit.png">
+<img src="Screenshots/header-edit.png"  width="600px">
 
 I changed some of the bullets of the [Org-sidian bullets](https://github.com/santiyounger/Org-sidian-Bullets).
 
 ### [Pretty highlights](Snippets/Pretty_highlights.css)
 
-<img src="Screenshots/highlights.png"> 
+<img src="Screenshots/Highlights.png"> 
 
 - Original snippet [here](https://github.com/chetachiezikeuzor/Obsidian-Snippets#Pretty-Highlights).
 - I added another mark class, the aqua one. I added some colors based Material Ocean palette. [Here are some samples](Screenshots/Highlight-samples) of how almost all the color options look.
@@ -178,21 +179,21 @@ This snippet complements the native style settings of the buton plugin. [Source]
 
 This is how default tables look:
 
-<img src="Screenshots/table-default.png">
+<img src="Screenshots/table-default.png"  width="600px">
 
 This is the [Tables invisibile cssclass](https://github.com/PurpleGuitar/obsidian-snippets/blob/main/tables-invisible-cssclass.css) snippet. 
 Adding `cssclass: invisible` to the YAML, it looks this way:
 
-<img src="Screenshots/table-transparent.png">
+<img src="Screenshots/table-transparent.png"  width="600px">
 
 I modified the [Tables that look like latex tables](https://forum.obsidian.md/t/obsidian-tables-that-look-like-latex-tables-with-css/16683) snippet so it matches with the accent colors. 
 The YAML must contain: ```cssclass: academia```: 
 
-<img src="Screenshots/table-academia.png">
+<img src="Screenshots/table-academia.png"  width="600px">
 
 ### [VIM MODE](Snippets/Vim-line.css)
 
-<img src="Screenshots/Vim.png">
+<img src="Screenshots/Vim.png"  width="600px">
 
 Vim mode with line focus. [Source](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/17) No mod.
 
