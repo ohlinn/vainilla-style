@@ -82,7 +82,7 @@ Here is where I made some visual changes.
 It's a mod from [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme).
 Tags have a bullet style only in preview mode. It doesn't affect the tag pane.
 
-<img src="Screenshots/navpanel.png" width="200px"><img src="Screenshots/Tags.png" width="400px">
+<img src="Screenshots/navpanel.png"><img src="Screenshots/Tags.png">
 
 
 ### Header and horizontal lines
