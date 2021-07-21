@@ -1,0 +1,174 @@
+/*
+      .o8             o8o  oooo                                             .             
+     "888             `"'  `888                                           .o8             
+ .oooo888   .oooo.   oooo   888  oooo    ooo      ooo. .oo.    .ooooo.  .o888oo  .ooooo.  
+d88' `888  `P  )88b  `888   888   `88.  .8'       `888P"Y88b  d88' `88b   888   d88' `88b 
+888   888   .oP"888   888   888    `88..8'         888   888  888   888   888   888ooo888 
+888   888  d8(  888   888   888     `888'          888   888  888   888   888 . 888    .o 
+`Y8bod88P" `Y888""8o o888o o888o     .8'          o888o o888o `Y8bod8P'   "888" `Y8bod8P' 
+                                 .o..P'                                                   
+                                 `Y8P'                                                    
+        for: obsidian.md
+        by: vainille
+        date: 21-07-2021
+
+Adapted from:
+    * progress bar --> https://codepen.io/AbdulrahmanMasoud/pen/oNgKoxj
+    * typography --> https://codepen.io/kvendrik/pen/nfjas
+Tools:
+    * neumorphism style --> https://neumorphism.io/ 
+    
+    */
+
+
+/* ▰▰▰ TITLE ▰▰▰*/
+
+.daily {
+    align-content: center;
+    display: inline-block;
+    padding: 0.5vw 1vw;
+    text-align: center;
+    width: 100%;
+}
+
+.daily .todayday {
+    background-clip: text;
+    background-image: url(http://media-cache-ak0.pinimg.com/236x/79/e8/db/79e8dbe5b67d36cc7f8c1f80167f8bb8.jpg);
+    color: transparent;
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+}
+
+.daily .todaymonth {
+    background-clip: text;
+    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+    color: transparent;
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-animation: 8s movebg infinite alternate;
+    -webkit-animation-play-state: paused;
+    -webkit-animation-timing-function: ease;
+    -webkit-background-clip: text;
+}
+
+
+/* ▰▰▰ LINKS STYLE ▰▰▰*/
+
+#big-link::before {
+    color: black;
+    text-shadow: 6px 6px 12px #cccfd6, -6px -6px 12px #feffff;
+}
+
+#big-link {
+    background-clip: text;
+    background-color: #e5e9f0;
+    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+    border-radius: 1em;
+    box-shadow: 6px 6px 12px #cccfd6, -6px -6px 12px #feffff;
+    color: transparent;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding: .15em 1em;
+    text-transform: uppercase;
+    -webkit-animation: 8s movebg infinite alternate;
+    -webkit-animation-play-state: paused;
+    -webkit-animation-timing-function: ease;
+    -webkit-background-clip: text;
+}
+
+#big-link:hover {
+    color: cornflowerblue;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#small-link {
+    background-clip: text;
+    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+    color: transparent;
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding: .15em 1em;
+    -webkit-animation: 8s movebg infinite alternate;
+    -webkit-animation-play-state: paused;
+    -webkit-animation-timing-function: ease;
+    -webkit-background-clip: text;
+}
+
+#small-link:hover {
+    color: cornflowerblue;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+/* ▰▰▰ BARS ▰▰▰*/
+
+* {
+    box-sizing: border-box;
+}
+
+.bars {
+    background-color: #e5e9f0;
+    border-radius: 2rem;
+    box-shadow: inset 6px 6px 12px #cccfd6, inset -6px -6px 12px #feffff;
+    display: grid;
+    height: auto;
+    width: 100%;
+}
+
+.bars .bars-progres {
+    align-content: center;
+    padding: 1em;
+    text-align: center;
+}
+
+.bars .bars-progres .progres {
+    align-content: center;
+    float: left;
+    font-size: var(--font-normal);
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+.bars .bars-progres .progres:nth-child(odd) {
+    padding-right: .75em;
+}
+
+.bars .bars-progres .progres:nth-child(even) {
+    padding-left: .75em;
+}
+
+.bars .bars-progres .progres p {
+    float: none;
+    margin-bottom: .5em;
+}
+
+.bars .bars-progres .progres progress {
+    -webkit-appearance: none;
+    width: 100% !important;
+}
+
+::-webkit-progress-value {
+    background-image: linear-gradient(to right, #8490ff, #a3eeff);
+    border-radius: 15px;
+    position: absolute;
+}
+
+::-webkit-progress-bar {
+    background-color: #E5E9F0;
+    border: 0px solid #81A1C1;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px #cccfd6, -6px -6px 12px #feffff;
+    height: 20px !important;
+    position: relative;
+    top: -15px;
+}
