@@ -1,12 +1,10 @@
 <h1 align="center">VAINILLA STYLE</h1>
 <p align="center">Modded snippets for my personal Obsidian theme.</p>
 
-<p align="center"><img src="Screenshots/light-mode.png" width="85%"> </br>
-<img src="Screenshots/Editor-light.png" width="85%"></br>
+<p align="center"><img src="Screenshots/light-mode.png" width="45%"><img src="Screenshots/Editor-light.png" width="45%"></br>
 Light mode
 </br> </br>
-<img src="Screenshots/dark-mode.png" width="85%"> </br>
-<img src="Screenshots/editor-dark.png" width="85%"> </br> </br>
+<img src="Screenshots/dark-mode.png" width="45%"><img src="Screenshots/editor-dark.png" width="45%"> </br> </br>
 Dark mode</p>
 
 ## ABOUT
