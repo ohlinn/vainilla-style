@@ -1,20 +1,17 @@
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰*/
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 Stylized buttons - from Gabroel */
 button {
- border: solid 2px #fff;
- font-family: var(--font-monospace) !important;
-font-style: italic;
- border-radius: 30px;
- font-size: 20px;
- color: #fff;
- box-shadow: inset 2px 2px 0 #fff, 0 8px 10px -4px rgba(0,0,0,0.4);
- cursor: pointer;
- transition: all 0.4s ease;
- margin-bottom: 5px;
- margin-top: 5px;
- padding: 3px 12px !important;
+    border-radius: 30px;
+    border: solid 2px #fff;
+    box-shadow: inset 2px 2px 0 #fff, 0 8px 10px -4px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--font-monospace) !important;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px 12px !important;
+    transition: all 0.4s ease;
 }
-
-
-
