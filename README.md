@@ -1,15 +1,12 @@
 <h1 align="center">VAINILLA STYLE</h1>
 <p align="center">Modded snippets for my personal Obsidian theme.</p>
 
-<p align="center"><img src="Screenshots/light-mode.png" width="45%"><img src="Screenshots/Editor-light.png" width="45%"></br>
-Light mode
-</br> </br>
-<img src="Screenshots/dark-mode.png" width="45%"><img src="Screenshots/editor-dark.png" width="45%"> </br> </br>
-Dark mode</p>
+<p align="center"><img src="Screenshots/light-mode.png" width="20%"><img src="Screenshots/Editor-light.png" width="20%"><img src="Screenshots/dark-mode.png" width="20%"><img src="Screenshots/editor-dark.png" width="20%"></p>
 
 Newer updates july2021:
-<img src="Screenshots/preview.png" width="45%">
-<img src="Screenshots/darkprev.png" width="45%">
+
+
+<p align="center"><img src="Screenshots/preview.png" width="45%"><img src="Screenshots/darkprev.png" width="45%"></p>
 
 
 ## ABOUT
@@ -19,19 +16,15 @@ Newer updates july2021:
 - [Vainille Style Settings (my personal modifications)](#vainilla-style-settings)
 - [Vainille Style (Snippets and modifications I used)](#vainilla-style-snippets)
 - [Individual Snippets](#snippets)
+- The changed elements from my previous styles are in the snippets as comments.
 
 ## [Daily Note](dailyNote/Dailynote.css)
-My template for my daily note, with a progress bar.
+My template for my daily note, with a progress bar. 
 The html example is [here](dailyNote/Dailynote.md), with a sample and the templater codes.
-
-Adapted from:
-    * progress bar --> https://codepen.io/AbdulrahmanMasoud/pen/oNgKoxj
-    * typography --> https://codepen.io/kvendrik/pen/nfjas
-Tools:
-    * neumorphism style --> https://neumorphism.io/ 
+Adapted from some codepen snippets: [progress bar](https://codepen.io/AbdulrahmanMasoud/pen/oNgKoxj), [typography](https://codepen.io/kvendrik/pen/nfjas). [Neumorphism style](https://neumorphism.io/ ) was very helpful.
     
     
-<img src="Screenshots/dailynote-light.png" width="45%">
+<img src="Screenshots/dailynote-light.png" width="65%">
 <img src="Screenshots/dailynote-dark.png" width="45%">
 
 
@@ -106,6 +99,8 @@ Centered, background image for the h1, I also added lines after each of the head
 <img src="Screenshots/header.png" width="600px"> 
 
 My previous style, Based on the horizontal gradient line in Preview [source](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/master/Snippets/Lines%20-%20horizontal.md):
+
+
 <img src="Screenshots/header-preview.png" width="300px"> 
 
 ### Quotes and Code blocks
@@ -114,7 +109,8 @@ I changed the quote style and code blocks
 <img src="Screenshots/blocks.png"  width="600px">
 
 My previous style:
-<img src="Screenshots/quote1.png"  width="200px">
+
+<img src="Screenshots/quote1.png"  width="600px">
 
 
 ## Snippets
@@ -126,7 +122,7 @@ I modified the title style and the shadow of the admonitions. The rest of the co
 
 My previous style:
 
-<img src="Screenshots/admonition-cite.png"  width="200px" ><img src="Screenshots/admonition-information.png"  width="200px">
+<img src="Screenshots/admonition-cite.png"  width="300px" ><img src="Screenshots/admonition-information.png"  width="300px">
 
 ### [Aside blocks](Snippets/Aside.css)
 I modified the [ITS-Theme](https://github.com/SlRvb/Obsidian--ITS-Theme) snippet. I changed the shadow style and the italic of the hiden note.
@@ -140,7 +136,7 @@ The aside hidden note shows when the bubble is hovered:
 
 
 My previous style:
-<img src="Screenshots/aside.png"  width="200px"><img src="Screenshots/aside-hidden.png"  width="200px"><img src="Screenshots/aside-show.png"  width="200px">
+<img src="Screenshots/aside-hidden.png"  width="200px"><img src="Screenshots/aside-show.png"  width="200px">
 
 
 ### [Bigger Preview](/Snippets/Bigger_preview.css)
