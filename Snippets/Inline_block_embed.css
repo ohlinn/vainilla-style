@@ -38,8 +38,7 @@
     height: unset;
     max-height: unset;
     padding: 0;
-
-    max- height: unset;
+    max-height: unset;
 }
 
 .internal-embed[src*="#^"]>.markdown-embed>.markdown-embed-content>.markdown-preview-view>.markdown-preview-sizer {
