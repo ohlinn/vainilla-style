@@ -1,120 +1,72 @@
-/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-/* Aside - ITS theme
-/* mod 19-05-21 -  vainille
-/* <s class="aside-hide"></s>
-/* <s class="aside-show"></s>
-/* <s class="aside-in"></s>
-mod 22-07-21 --> neumo style
-/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+/*
+.o8        o8o                                            
+"888        `"'                                           
+ 888oooo.  oooo   .oooooooo  .oooooooo  .ooooo.  oooo d8b 
+ d88' `88b `888  888' `88b  888' `88b  d88' `88b `888""8P 
+ 888   888  888  888   888  888   888  888ooo888  888     
+ 888   888  888  `88bod8P'  `88bod8P'  888    .o  888     
+ `Y8bod8P' o888o `8oooooo.  `8oooooo.  `Y8bod8P' d888b    
+                 d"     YD  d"     YD                     
+                 "Y88888P'  "Y88888P'                     
+                                                          
+                                           o8o                             
+                                           `"'                             
+oo.ooooo.  oooo d8b  .ooooo.  oooo    ooo oooo   .ooooo.  oooo oooo    ooo 
+ 888' `88b `888""8P d88' `88b  `88.  .8'  `888  d88' `88b  `88. `88.  .8'  
+ 888   888  888     888ooo888   `88..8'    888  888ooo888   `88..]88..8'   
+ 888   888  888     888    .o    `888'     888  888    .o    `888'`888'    
+ 888bod8P' d888b    `Y8bod8P'     `8'     o888o `Y8bod8P'     `8'  `8'     
+ 888                                                                       
+o888o                                                                      
+                                                                           
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 
-/*-Comments/Asides-*/
-/*Hide Aside and hover to reveal it*/
+/* ==================================================================== */
 
-.aside-hide {
-    /*background-color:var(--background-primary-alt);
-    border-radius:5px;*/
-    background-color: var(--background-primary);
-    border-radius: 5rem;
-    box-shadow: inset 3px 3px 6px var(--main-darken), inset -3px -3px 6px var(--main-lighten);
-    clear: right;
-    color: transparent;
-    color: transparent;
-    float: right;
-    font-style: normal;
-    font-weight: unset;
-    height: 1.5em;
-    margin-right: -1.8em;
-    margin: .5em;
+
+/*============bigger link popup preview  ================*/
+
+.popover.hover-popover {
+    position: absolute;
+    z-index: var(--layer-popover);
+    transform: scale(0.9);
+    /* makes the content smaller */
+    max-height: 800px;
+    /* was 300 */
+    min-height: 100px;
+    width: 500px;
+    /* was 400 */
     overflow: hidden;
-    position: relative;
-    text-align: center;
-    text-decoration: unset;
-    width: 1.5em;
+    padding: 0;
+    border-bottom: none;
 }
 
-.aside-hide:before {
-    border-radius: 5px;
-    color: var(--text-accent); /*none*/
-    content: "🗫 |";/*"🗨 */
-    display: inline-block;
-    font-size: 1em;
-    font-style: normal;
-    margin-top: -.2em;
-    /* padding-left:.3em;
-   padding-top:.1em;*/
-    text-shadow: 0 0 0 var(--interactive-accent);
-}
 
-.aside-hide:hover {
+/* I'm not sure what this does, got popove code from Obsdn-Dark-Rmx */
+
+
+/*
+  .popover {
     background-color: var(--background-primary);
-    border-radius: 1rem;
-    /*border-right:2px solid var(--interactive-accent);*/
-    box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
-    color: unset;
-    font-size: calc(var(--font-normal) - 1px);
-    font-style: normal;
-    height: unset;
-    max-width: 40%;
-    padding-top: .5em;
-    padding: 1em;
-    text-overflow: unset;
-    white-space: normal;
-    width: fit-content;
-    z-index: 3;
-}
-
-/*Show Aside*/
-
-.aside-show {
-    background-color: var(--background-primary);
-    border-radius: 1rem;
-    /*   box-shadow:.2em .2em .2em var(--interactive-accent);*/
-    box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
-    clear: right;
-    float: right;
-    font-style: normal;
-    font-weight: unset;
-    margin-bottom: .2em;
-    margin-right: -25.3em;
-    padding: 1em;
+    border: 1px solid var(--background-primary-alt);
+    box-shadow: 3px 3px 7px var(--background-modifier-box-shadow);
+    border-radius: 6px;
+    padding: 15px 20px 10px 20px;
     position: relative;
-    text-align: justify;
-    text-decoration: unset;
-    width: 400px;
-}
-/*Aside Inside the Note*/
-
-.aside-in {
-    background-color: var(--background-primary);
-    border-color: var(--background-primary-alt);
-    border-radius: 1rem;
-    border-radius: 5px;
-    /*   box-shadow:.2em .2em .2em var(--interactive-accent);*/
-    box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
-    clear: right;
-    float: right;
-    font-size: var(--font-small)!important;
-    font-style: normal;
-    font-weight: unset;
-    left: 1em;
-    margin-bottom: .2em;
-    max-width: 18em;
-    padding: 1em;
-    position: relative;
-    text-align: justify;
-    text-decoration: none!important;
-    width: auto;
-    z-index: 3;
 }
 
-.aside-in .internal-embed.is-loaded:not(.image-embed),
-.aside-in .markdown-embed {
-    width: 100%;
+/* remove-tweak the bottom gradient on the popup: remove the gradient or set height to 0 */
+
+.popover.hover-popover:after {
+    height: 0px;
+    background: linear-gradient(to bottom, transparent, var(--background-primary) 80%, var(--background-primary));
 }
 
-/*Shrink Scrollbar*/
 
+/* Colour for pop-up text in ⌘+O */
 
-.aside>::-webkit-scrollbar {
-    width: 5px;
+.suggestion-item.is-selected {
+    background-color: blue;
+    /* PB changed from var(--text-accent) */
+    color: whitesmoke;
 }
