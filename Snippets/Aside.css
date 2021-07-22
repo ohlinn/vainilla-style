@@ -13,7 +13,7 @@ mod 22-07-21 --> neumo style
 .aside-hide {
     /*background-color:var(--background-primary-alt);
     border-radius:5px;*/
-    background-color: #e5e9f0;
+    background-color: var(--background-primary);
     border-radius: 5rem;
     box-shadow: inset 3px 3px 6px var(--main-darken), inset -3px -3px 6px var(--main-lighten);
     clear: right;
@@ -46,7 +46,7 @@ mod 22-07-21 --> neumo style
 }
 
 .aside-hide:hover {
-    background-color: #e5e9f0;
+    background-color: var(--background-primary);
     border-radius: 1rem;
     /*border-right:2px solid var(--interactive-accent);*/
     box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
@@ -66,7 +66,7 @@ mod 22-07-21 --> neumo style
 /*Show Aside*/
 
 .aside-show {
-    background-color: #e5e9f0;
+    background-color: var(--background-primary);
     border-radius: 1rem;
     /*   box-shadow:.2em .2em .2em var(--interactive-accent);*/
     box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
@@ -85,7 +85,7 @@ mod 22-07-21 --> neumo style
 /*Aside Inside the Note*/
 
 .aside-in {
-    background-color: #e5e9f0;
+    background-color: var(--background-primary);
     border-color: var(--background-primary-alt);
     border-radius: 1rem;
     border-radius: 5px;
