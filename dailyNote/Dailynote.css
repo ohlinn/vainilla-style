@@ -21,6 +21,20 @@ Tools:
     */
 
 
+/*colors*/
+.theme-light {
+    --main--b: #e5e9f0;
+    --main-darken: #cccfd6;
+    --main-lighten: #feffff;
+    --main--c: #0f111a;
+}
+
+.theme-dark {
+    --main--b: #0f111a;
+    --main-darken: #06070a;
+    --main-lighten: #202020!important;
+    --main--c: #e5e9f0;
+}
 /* ▰▰▰ TITLE ▰▰▰*/
 
 .daily {
@@ -58,16 +72,16 @@ Tools:
 /* ▰▰▰ LINKS STYLE ▰▰▰*/
 
 #big-link::before {
-    color: black;
-    text-shadow: 6px 6px 12px #cccfd6, -6px -6px 12px #feffff;
+    color: var(--main--c);
+    text-shadow: 3px 3px 12px var(--main-darken), -3px -3px 12px var(--main-lighten);
 }
 
 #big-link {
     background-clip: text;
-    background-color: #e5e9f0;
+    background-color: var(--main--b);
     background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
     border-radius: 1em;
-    box-shadow: 6px 6px 12px #cccfd6, -6px -6px 12px #feffff;
+    box-shadow: 3px 3px 12px var(--main-darken), -3px -3px 12px var(--main-lighten);
     color: transparent;
     font-size: 1.5em;
     font-weight: 900;
@@ -111,14 +125,14 @@ Tools:
 
 /* ▰▰▰ BARS ▰▰▰*/
 
-* {
+*{
     box-sizing: border-box;
 }
 
 .bars {
-    background-color: #e5e9f0;
+    background-color: var(--main--b);
     border-radius: 2rem;
-    box-shadow: inset 6px 6px 12px #cccfd6, inset -6px -6px 12px #feffff;
+    box-shadow: inset 3px 3px 12px var(--main-darken), inset -3px -3px 12px var(--main-lighten);
     display: grid;
     height: auto;
     width: 100%;
@@ -126,7 +140,7 @@ Tools:
 
 .bars .bars-progres {
     align-content: center;
-    padding: 1em;
+    padding: 2em;
     text-align: center;
 }
 
@@ -149,7 +163,7 @@ Tools:
 
 .bars .bars-progres .progres p {
     float: none;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 .bars .bars-progres .progres progress {
@@ -164,10 +178,10 @@ Tools:
 }
 
 ::-webkit-progress-bar {
-    background-color: #E5E9F0;
+    background-color: var(--main--b);
     border: 0px solid #81A1C1;
     border-radius: 15px;
-    box-shadow: 6px 6px 12px #cccfd6, -6px -6px 12px #feffff;
+    box-shadow: 3px 3px 12px var(--main-darken), -3px -3px 12px var(--main-lighten);
     height: 20px !important;
     position: relative;
     top: -15px;
