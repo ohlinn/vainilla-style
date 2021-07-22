@@ -1,63 +1,89 @@
- 
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*VAINILLA
 S T Y L E 
 -nav pane
 -tag pane
 -bullet tags
--header line
+-hr line
 -quotes
+-codeblock
+-justification
+-selection
 mod from its-theme 20-05-21
 using california coast colors
+update: 21-07-21
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰*/
-
-:root{
-	--color-black-rgb: 15, 17, 26;
-	--color-white-rgb: 229,233,240;
+:root {
+    --color-black-rgb: 15, 17, 26;
+    --color-white-rgb: 229, 233, 240;
     --text-selection: hsl(var(--accent-h), var(--accent-s), 90%);
-      
 }
+
 .theme-light,
 .theme-dark {
-    --accent-90: hsla(var(--accent-hsl), 0.9);
-    --accent-80: hsla(var(--accent-hsl), 0.8);
-    --accent-70: hsla(var(--accent-hsl), 0.7);
-    --accent-60: hsla(var(--accent-hsl), 0.6);
-    --accent-50: hsla(var(--accent-hsl), 0.5);
-    --accent-40: hsla(var(--accent-hsl), 0.4);
-    --accent-30: hsla(var(--accent-hsl), 0.3);
-    --accent-20: hsla(var(--accent-hsl), 0.2);
     --accent-10: hsla(var(--accent-hsl), 0.1);
-    --accent-5: hsla(var(--accent-hsl), 0.05);
-    --accent-3: hsla(var(--accent-hsl), 0.03);
     --accent-2: hsla(var(--accent-hsl), 0.02);
+    --accent-20: hsla(var(--accent-hsl), 0.2);
+    --accent-3: hsla(var(--accent-hsl), 0.03);
+    --accent-30: hsla(var(--accent-hsl), 0.3);
+    --accent-40: hsla(var(--accent-hsl), 0.4);
+    --accent-5: hsla(var(--accent-hsl), 0.05);
+    --accent-50: hsla(var(--accent-hsl), 0.5);
+    --accent-60: hsla(var(--accent-hsl), 0.6);
+    --accent-70: hsla(var(--accent-hsl), 0.7);
+    --accent-80: hsla(var(--accent-hsl), 0.8);
+    --accent-90: hsla(var(--accent-hsl), 0.9);
 }
 
+.theme-light {
+    --main--b: var(--color-black-rgb);
+    --main-darken: #c0c4ca;
+    --main-h: 218;
+    --main-l: 92%;
+    --main-lighten: #ffffff;
+    --main-s: 26.8%;
+
+    /* Accent hue */
+    /* Accent lightness Light Mode */
+    /* Accent saturation */
+}
+
+.theme-dark {
+    --main--b: var(--color-black-rgb);
+    --main-darken: #06070a;
+    --main-h: 229;
+    --main-l: 8%;
+    --main-lighten: #181b2a;
+    --main-s: 26.8%;
+
+    /* Accent hue */
+    /* Accent lightness Light Mode */
+    /* Accent saturation */
+}
 
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 NAV FOLDER from ITS-THEME
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-
-
 /*Nav Folder/File Icons*/
 .nav-folder-children .nav-folder-title-content::before {
-    content: '📁'/*\1F5BF*/;
     color: transparent;
-    text-shadow: 0 0 0 var(--accent-80);
-    margin-right: 4px;
+    content: '📁' /*\1F5BF*/
+    ;
     font-size: .9em;
-}
-.nav-folder-children .nav-file-title-content::before {
-    content: "📄"/*\1F5D0*/;
-    color: transparent;
-    text-shadow: 0 0 0 var(--shade-80);
-    margin-right: 5px;
-    font-size: .85em;
+    margin-right: 4px;
+    text-shadow: 0 0 0 var(--accent-80);
 }
 
+.nav-folder-children .nav-file-title-content::before {
+    color: transparent;
+    content: "📄" /*\1F5D0*/;
+    font-size: .85em;
+    margin-right: 5px;
+    text-shadow: 0 0 0 var(--shade-80);
+}
 
 /*Inactive Folder Color*/
 .is-collapsed .nav-folder-title-content:before {
@@ -65,15 +91,18 @@ NAV FOLDER from ITS-THEME
 }
 
 /*Nav Folder Lines*/
-.nav-folder, .nav-file {
-    margin: 0 -2px;
-    margin-right: 0px;
+.nav-folder,
+.nav-file {
     border-left: 1px solid var(--accent-20);
+    margin-right: 0px;
+    margin: 0 -2px;
 }
+
 /*Align Folder Line*/
 .nav-folder-children {
     padding-left: 18px;
 }
+
 /*Nav Hover Line Colors*/
 .nav-folder:hover,
 .nav-file:hover {
@@ -81,11 +110,12 @@ NAV FOLDER from ITS-THEME
 }
 
 /*Text wrap*/
-.nav-file-title, .nav-folder-title {
-    white-space: normal;
-    width: auto;
+.nav-file-title,
+.nav-folder-title {
     border-radius: 15px;
     border: 0;
+    white-space: normal;
+    width: auto;
 }
 
 /*Folder Bold*/
@@ -97,23 +127,25 @@ NAV FOLDER from ITS-THEME
 .nav-folder-title {
     padding-left: 4px;
 }
+
 .nav-folder-title:hover {
     color: var(--accent-90) !important;
 }
 
 /*File Colors|File Under Folder*/
 .nav-file-title {
-    padding-left: 1.8%;
     color: var(--shade-70);
-}
-.nav-file-title:hover {
-    color: var(--accent-50) !important;
-    font-weight: 600; 
-}
-.nav-folder-children .nav-file-title-content::before{
-    text-shadow: 0 0 0 var(--shade-50);
+    padding-left: 1.8%;
 }
 
+.nav-file-title:hover {
+    color: var(--accent-50) !important;
+    font-weight: 600;
+}
+
+.nav-folder-children .nav-file-title-content::before {
+    text-shadow: 0 0 0 var(--shade-50);
+}
 
 /*File selected*/
 .nav-file-title.is-active {
@@ -123,8 +155,8 @@ NAV FOLDER from ITS-THEME
 
 /*Dragged*/
 .nav-folder-title.is-being-dragged-over {
-    border:none;
     border-radius: 15px;
+    border: none;
 }
 
 /*Arrows*/
@@ -134,34 +166,33 @@ NAV FOLDER from ITS-THEME
 
 /*Word Wrap Pane*/
 .tree-item-inner {
-    word-wrap: break-word;
     width: 100%;
+    word-wrap: break-word;
 }
-
-
-
 
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 TAG PANE from ITS-THEME
-
 /*--Tag Pane--*/
 /*Text*/
 .tree-item-self {
-    color: var(--shade-80);
     border-radius: 25px;
+    color: var(--shade-80);
 }
+
 .tag-container .tree-item-self:hover {
     color: var(--accent-90);
 }
 
 /*Tag Pane Lines*/
 .tag-container .tree-item-children {
-    margin-left: .7em;
+    border-bottom: 1px solid var(--shade-2);
     border-left: 1px solid var(--accent-50);
-    border-bottom: 1px solid var(--shade-2);  /*Removes Dot!!*/
-    transition: all 0.5s ease-in-out;
+    margin-left: .7em;
     padding: 0;
+    transition: all 0.5s ease-in-out;
+
+    /*Removes Dot!!*/
 }
 
 .tag-container .tree-item-children:hover {
@@ -174,205 +205,196 @@ TAG PANE from ITS-THEME
     margin: .2em .5em;
     user-select: text;
 }
+
 /*Outline Pane Lines*/
 .outline .tree-item-children {
-    margin-left: .7em;
     border-left: 1px solid var(--accent-50);
-    transition: all 0.3s ease-in-out;
+    margin-left: .7em;
     padding: 0;
+    transition: all 0.3s ease-in-out;
 }
+
 .outline .tree-item-children:hover {
     border-color: var(--accent-90);
     border-radius: 20px;
 }
 
-
-
-
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*TAGS*/
-
 .tag {
     background-color: var(--accent-20);
-    border: 0px  var(--accent-50);
-    border-radius: 5px;
+    border-radius: 50px;
+    border: 1px var(--accent-50);
     color: var(--accent-90);
+    cursor: pointer;
+    display: inline-block;
     font-size: calc(var(--font-normal) - 1px) !important;
-    padding: 15px 15px;
-    font-weight: 600;
+    font-weight: 500;
+    margin: 5px 5px;
+    padding: 0px 10px !important;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    margin: 0px 0px;
-    cursor: pointer;
 }
 
 /*Hover Underline*/
-
-.markdown-preview-section a.tag:hover{
+.markdown-preview-section a.tag:hover {
     background-color: var(--accent-50);
-text-shadow:none !important;
-    box-shadow:-1px -1px 0 hsl(var(--accent-20)),-1px -1px 0 hsl(var(--accent-20)),-1px -1px 0 hsl(var(--accent-20));
+    box-shadow: -1px -1px 0 hsl(var(--accent-20)), -1px -1px 0 hsl(var(--accent-20)), -1px -1px 0 hsl(var(--accent-20));
+    text-shadow: none !important;
+}
 
-}
 .tag:hover {
-    color: rgb(var(--background-rgb))!important;
-    text-decoration: none!important;
-    font-weight:400;
+    color: rgb(var(--background-rgb)) !important;
+    font-weight: 400;
+    text-decoration: none !important;
 }
+
 /*Editor Tags*/
 .cm-s-obsidian span.cm-hashtag {
-    text-decoration: none;
     color: var(--accent-80);
-    
+    text-decoration: none;
 }
+
 .cm-s-obsidian span.cm-hashtag:hover {
     text-decoration: none;
 }
 
-
-
-/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-/*H E A D E R L I N E
-
-/*Heading Line*/
-h1:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-image: linear-gradient(to right, var(--background-primary), var(--accent-50), var(--background-primary));
-    left: 0;
-}
-
-h2:after {
-    content: "";
-    display: block;
-    width: 85%;
-    height: 3px;
-    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
-    left: 0;
-}
-
-h3:after {
-    content: "";
-    display: block;
-    width: 65%;
-    height: 3px;
-    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
-    left: 0;
-}
-
-h4:after {
-    content: "";
-    display: block;
-    width: 40%;
-    height: 3px;
-    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
-    left: 0;
-}
-
-h5:after {
-    content: "";
-    display: block;
-    width: 30%;
-    height: 3px;
-    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
-    left: 0;
-}
-
-h6:after {
-    content: "";
-    display: block;
-    width: 25%;
-    height: 3px;
-    background-image: linear-gradient(to right, var(--accent-50), var(--background-primary));
-    left: 0;
-}
-
-
-
-/*Editor Heading Lines*/
-.cm-s-obsidian pre.HyperMD-header:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: var(--accent-30);
-    left: 0;
-}
-
-
-
-
-
-/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 Line gradient mod vainilie
 ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰*/
-
-  
-  h1 {
-    text-align: center;
-  }
-
-  
-  .markdown-preview-view hr {
-    margin-block-start: 4em;
-    margin-block-end: 4em;
+.markdown-preview-view hr {
+    background-image: linear-gradient(to right, var(--background-primary), var(--accent-50), var(--background-primary));
     border: none;
     height: 2px;
-    background-image: linear-gradient(to right, var(--background-primary), var(--accent-50), var(--background-primary));
-  }
-  
-  .markdown-preview-view hr::after {
+    margin-block-end: 4em;
+    margin-block-start: 4em;
+}
+
+/*
+.markdown-preview-view hr::after {
+    background-color: var(--background-primary);
+    color: var(--text-accent);
     content: '§';
     display: inline-block;
-    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(60deg);
-    transform-origin: 50% 50%;
     padding: 0.5rem;
-    color: var(--text-accent);
-    background-color: var(--background-primary);
-  }
-  
-
-  /*/*/
- /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+}*/
+/*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 /* Blockquote
 /* mod 19-05-21 -  vainille
+21-07-21 neumo
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-/*--Blockquote "--*/
-.markdown-preview-section blockquote:before{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: -.75em;
-    margin-top: -.75em;
-    opacity: .25;
-}
+/*--Blockquote "--
+.markdown-preview-section blockquote:before {
+      height: 1.5rem;
+      margin-left: -.75em;
+      margin-top: -.75em;
+      opacity: .50;
+      width: 1.5rem;
+  }*/
 .markdown-preview-view blockquote {
-    display: flow-root;
-    border: 0px var(--background-modifier-accent);
-    background-color: var(--background-secondary);
-    border-left-width: 8px;
-    border-radius: 5px;
-    position: relative;
+    background-color: var(--main--b) !important;
+    border-color: var(--accent-40);
+    border-left-width: 7px;
+    border-radius: 1em;
+    box-shadow: 5px 5px 14px var(--main-darken), -5px -5px 14px var(--main-lighten) !important;
+    display: block;
+    font-size: var(--font-small);
     margin: 2%;
-    padding-right: 35px;
     padding-left: 10px;
-    box-shadow: .1em .1em .2em var(--background-modifier-box-shadow);
-; /*Don't overlap with "*/
+    padding-right: 35px;
+    padding: 1em !important;
+    position: relative;
+
+    /*previous style:
+    .markdown-preview-view blockquote {
+     background-color: var(--background-secondary);
+     border-left-width: 8px;
+     border-radius: 5px;
+     border: 0px var(--background-modifier-accent);
+     box-shadow: .1em .1em .2em var(--background-modifier-box-shadow);
+     display: flow-root;
+     margin: 2%;
+     padding-left: 10px;
+     padding-right: 35px;
+     position: relative;*/
+
 }
-.markdown-preview-section blockquote{
+
+.markdown-preview-section blockquote {
     padding: 0 1rem 0 1.5rem;
 }
+/* .markdown-preview-view blockquote> :last-child {
+     margin-bottom: 10px;
+      .markdown-preview-view blockquote> :last-child {
+     margin-bottom: 10px;
+ }
 
-.markdown-preview-view blockquote > :last-child {
-    margin-bottom: 10px;}
-    .markdown-preview-view blockquote > :first-child {
-        margin-top: 15px;}
+ .markdown-preview-view blockquote> :first-child {
+     margin-top: 15px;
+ }/*
 
+/*
+             o8o        .o88o.                           .   
+             `"'        888 `"                         .o8   
+oooo  oooo  oooo       o888oo   .ooooo.  ooo. .oo.   .o888oo 
+`888  `888  `888        888    d88' `88b `888P"Y88b    888   
+ 888   888   888        888    888   888  888   888    888   
+ 888   888   888        888    888   888  888   888    888 . 
+ `V88V"V8P' o888o      o888o   `Y8bod8P' o888o o888o   "888"                                                             
+*/
+.outline,
+.outline .pane-empty,
+.outline .collapsible-item-self,
+.search-input-container input,
+.side-dock-collapsible-section-header,
+.search-result-file-title,
+.search-empty-state,
+.search-input-container input::placeholder,
+.is-collapsed .search-result-file-title,
+.workspace-leaf-content .search-input,
+.footnotes-list,
+.frontmatter-container,
+.frontmatter-container .frontmatter-container-header,
+.markdown-preview-section .frontmatter code,
+.graph-controls .setting-item-name,
+.vertical-tab-nav-item,
+.frontmatter-container .tag,
+.cm-s-obsidian .cm-hmd-frontmatter,
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian pre.HyperMD-footnote,
+.nav-file-title,
+.tree-item-self,
+.nav-folder-title,
+.tag-pane-tag,
+.tooltip,
+.document-search-button,
+.workspace>.workspace-split:not(.mod-root) .CodeMirror,
+.workspace>.workspace-split:not(.mod-root) .markdown-preview-view,
+.document-search-button,
+.cm-s-obsidian pre.HyperMD-footnote {
+    font-size: var(--font-small) !important;
+}
 
+/* _hyphenation_and_justification*/
+.cm-s-obsidian,
+.markdown-preview-view {
+    text-align: justify;
+}
+
+/*code block*/
+.markdown-preview-section pre>code {
+    background-color: var(--shade-2) !important;
+    box-shadow: inset 2px 2px 5px var(--main-darken), inset -2px -2px 5px var(--main-lighten);
+    padding: 1em !important;
+}
+
+/*more contrast in selection*/
+::selection {
+    background: #7c9cfe;
+    color: pink;
+}
