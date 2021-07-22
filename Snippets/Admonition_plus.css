@@ -46,7 +46,7 @@ ADMONITION PLUGIN
 
 .admonition {
     align-content: center !important;
-    background: #e5e9f0 !important;
+    background: var(--background-primary) !important;
     border-left: none !important;
     border-radius: 15px !important;
     box-shadow: 5px 5px 14px var(--main-darken), -5px -5px 14px var(--main-lighten) !important;
@@ -87,7 +87,7 @@ ADMONITION PLUGIN
 }
 
 .admonition-title {
-    background-color: #e5e9f0 !important;
+    background-color: var(--background-primary) !important;
     border-radius: 15px !important;
     box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten) !important;
     font-family: bondi;
