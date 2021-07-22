@@ -1,213 +1,225 @@
-:root{
-  
-  
-  /*STABILO HIGHLIGHTS*/
-  --st-pink1: #f7c2d6;
-  --st-pink2: #fb83b3;
-  --st-pink3: #F8B6A8;
-  --st-red: #f8877f;
-  --st-purple: #c3bbec;
-  --st-green: #a7e8c8;
-  --st-green2: #77e68a;
-  
-  /*MATERIAL OCEAN COLORS*/
-  --m-red: #BF616A;
-  --m-yellow: #EBCB8B;
-  --m-clearblue: #88C0D0;
-  --m-blue: #81A1C1;
-  --m-purple: #A48EAD;
-  --m-bluegray: #4C566A;
-  --m-white: #E5E9F0;
-  --m-bluegray2: #3B4252;
-  --m-secondary: #00010A;
-  --m-accent: #3A575C;
-  --m-primary: #0F111A;
-  --m-green: #A3BE8C;
+:root {
+    --boldlightpink: #ffbaeb;
+    --boldorange: #ffb86c;
+    --boldred: #d4b6b6;
+    --boldyellow: #ffff00;
+    --cornflower-blue: #a1c4fd;
+    --duskblue: #a2acc3;
+    --fairpink: #eed3e1;
+    --gray: #cacfd9;
+    --light-cornflower-blue: #adccff;
+    --linen: #fcecec;
+    --m-accent: #3A575C;
+    --m-blue: #81A1C1;
+    --m-bluegray: #4C566A;
+    --m-clearblue: #88C0D0;
+    --m-green: #A3BE8C;
+    --m-primary: #0F111A;
+    --m-purple: #A48EAD;
+    --m-red: #BF616A;
+    --m-secondary: #00010A;
+    --m-white: #E5E9F0;
+    --m-yellow: #EBCB8B;
+    --orange: #FFAd2a;
+    --paleblue: #b5d3ff;
+    --palegreen: #88C0D0;
+    --pink: #f2b3cf;
+    --purple: #d2b3ff;
+    --st-green: #a7e8c8;
+    --st-purple: #c3bbec;
+    --st-red: #f8877f;
+    --yellow: #fff3a3;
 
-  /*RED*/
-  --red1: #ff5582;
-  --red2: #ff5555;
-  --red3: #ff879f;
-  --boldred: #d4b6b6;
-
-
-  /*PINK*/
-  --pink: #f2b3cf; 
-  --pink1: #f2b3dc;
-  --pink2: #e8b4c2;
-  --pink3: #e8b4b8;
-  --fairpink: #eed3e1;
-  --fairpink2: #eed3d5;
-  --boldlightpink: #ffbaeb;
-
-/*YELLOW*/
-  --yellow: #fff3a3;
-  --linen: #fcecec;
-  --boldyellow: #ffff00;
-  --boldorange: #ffb86c;
-  --orange: #FFAd2a;
-
-/*BLUE*/
-  --paleblue: #b5d3ff; 
-  --pale2: #b5e1ff; 
-  --pale3: #b5d3ff;
-  --pale4: #bfd9ff;
-  --pale5: #bdd1ef;
-  --cornflower-blue: #a1c4fd;
-  --light-cornflower-blue: #adccff;
-
-/*PURPLE*/
-  --purple: #d2b3ff; 
-  --purple2: #bd93f9; 
-  --purple3: #e5bfff; 
-  --purple4: #ecc8fc;
-
-/*GREEN*/
-  --palegreen: #88C0D0; 
-  --palegreen2: #bbfabb;
-
-/*GREY*/
-  --duskblue: #a2acc3; 
-  --gray: #cacfd9;
-
+    /*STABILO HIGHLIGHTS*/
+    --st-pink1: #f7c2d6;
+    --st-pink2: #fb83b3;
+    --st-pink3: #F8B6A8;
+    --st-green2: #77e68a;
+    /*MATERIAL OCEAN COLORS*/
+    --m-bluegray2: #3B4252;
+    /*RED*/
+    --red1: #ff5582;
+    --red2: #ff5555;
+    --red3: #ff879f;
+    /*PINK*/
+    --pink1: #f2b3dc;
+    --pink2: #e8b4c2;
+    --pink3: #e8b4b8;
+    --fairpink2: #eed3d5;
+    /*YELLOW*/
+    /*BLUE*/
+    --pale2: #b5e1ff;
+    --pale3: #b5d3ff;
+    --pale4: #bfd9ff;
+    --pale5: #bdd1ef;
+    /*PURPLE*/
+    --purple2: #bd93f9;
+    --purple3: #e5bfff;
+    --purple4: #ecc8fc;
+    /*GREEN*/
+    --palegreen2: #bbfabb;
+    /*GREY*/
 }
-.theme-light{
+
+.theme-light {
+    --aqua-highlighter: var(--m-clearblue);
+    --blue-highlighter: var(--cornflower-blue);
+    --green-highlighter: var(--st-green2);
+    --grey-highlighter: var(--duskblue);
+    --orange-highlighter: var(--orange);
+    --pink-highlighter: var(--st-pink3);
+    --purple-highlighter: var(--purple);
+    --red-highlighter: var(--red2);
+    --text-highlight-color: var(--m-primary);
+    --text-highlight-rgb: var(--m-red);
+    --yellow-highlighter: var(--m-yellow);
+
     /*----------------------------------------------------------------
     HIGHLIGHTERS FOR LIGHT
     ----------------------------------------------------------------*/
-    --yellow-highlighter: var(--m-yellow);
-    --pink-highlighter: var(--st-pink3);
-    --red-highlighter: var(--red2);
-    --blue-highlighter: var(--cornflower-blue);
-    --green-highlighter: var(--st-green2);
-    --purple-highlighter: var(--purple);
-    --orange-highlighter: var(--orange);
-    --grey-highlighter: var(--duskblue);
-    --aqua-highlighter: var(--m-clearblue);
-
-    --text-highlight-rgb:var(--m-red);
-	  --text-highlight-color:var(--m-primary);
 }
 
+.theme-dark {
+    --aqua-highlighter: var(--palegreen);
+    --blue-highlighter: var(--light-cornflower-blue);
+    --green-highlighter: var(--st-green);
+    --grey-highlighter: var(--gray);
+    --orange-highlighter: var(--boldorange);
+    --pink-highlighter: var(--boldlightpink);
+    --purple-highlighter: var(--st-purple);
+    --red-highlighter: VAR(--st-red);
+    --text-highlight-color: var(--m-primary);
+    --text-highlight-rgb: var(--m-blue);
+    --yellow-highlighter: var(--yellow);
 
-.theme-dark{
     /*----------------------------------------------------------------
     HIGHLIGHTERS  DARK
     ----------------------------------------------------------------*/
-    --yellow-highlighter: var(--yellow);
-    --pink-highlighter: var(--boldlightpink);
-    --red-highlighter: VAR(--st-red);
-    --blue-highlighter:var(--light-cornflower-blue);
-    --green-highlighter: var(--st-green);
-    --purple-highlighter: var(--st-purple);
-    --orange-highlighter: var(--boldorange);
-    --grey-highlighter: var(--gray);
-    --aqua-highlighter: var(--palegreen);
-
-	  --text-highlight-color:var(--m-primary);
-    --text-highlight-rgb: var(--m-blue);
 }
 
 /*----------------------------------------------------------------
 HIGHLIGHTING (MARK)
 ----------------------------------------------------------------*/
-mark > strong {
-  color: var(--text-highlight-color) !important;
-  font-weight: 900;
+mark>strong {
+    color: var(--text-highlight-color) !important;
+    font-weight: 900;
 }
 
-mark > em {
-  color: var(--text-highlight-color) !important;
-  font-weight: 500;
+mark>em {
+    color: var(--text-highlight-color) !important;
+    font-weight: 500;
 }
 
-mark{
-  color: var(--text-highlight-color) !important;
-  background-color: var(--text-highlight-rgb) !important;
+mark {
+    background-color: var(--text-highlight-rgb) !important;
+    color: var(--text-highlight-color) !important;
 }
 
 .markdown-preview-view mark {
+    background-color: var(--text-highlight-rgb);
     color: var(--text-highlight-color);
     font-weight: 500;
-    background-color: var(--text-highlight-rgb);
 }
 
 .cm-s-obsidian span.cm-highlight {
+    background-color: var(--text-highlight-rgb);
     color: var(--text-highlight-color);
     font-weight: 500;
-    background-color: var(--text-highlight-rgb);
 }
 
 /*----------------------------------------------------------------
 REALISTIC HIGHLIGHT
 ----------------------------------------------------------------*/
-mark.yellow{ --text-highlight-rgb: var(--yellow-highlighter); }
-mark.pink{ --text-highlight-rgb: var(--pink-highlighter); }
-mark.blue{ --text-highlight-rgb: var(--blue-highlighter); }
-mark.green{ --text-highlight-rgb: var(--green-highlighter); }
-mark.red{ --text-highlight-rgb: var(--red-highlighter);  }
-mark.grey{ --text-highlight-rgb: var(--grey-highlighter);  }
-mark.orange{ --text-highlight-rgb: var(--orange-highlighter);  }
-mark.red{ --text-highlight-rgb: var(--red-highlighter);  }
-mark.purple{ --text-highlight-rgb: var(--purple-highlighter);  }
-mark.aqua{ --text-highlight-rgb: var(--aqua-highlighter);  }
+mark.yellow {
+    --text-highlight-rgb: var(--yellow-highlighter);
+}
+
+mark.pink {
+    --text-highlight-rgb: var(--pink-highlighter);
+}
+
+mark.blue {
+    --text-highlight-rgb: var(--blue-highlighter);
+}
+
+mark.green {
+    --text-highlight-rgb: var(--green-highlighter);
+}
+
+mark.red {
+    --text-highlight-rgb: var(--red-highlighter);
+}
+
+mark.grey {
+    --text-highlight-rgb: var(--grey-highlighter);
+}
+
+mark.orange {
+    --text-highlight-rgb: var(--orange-highlighter);
+}
+
+mark.red {
+    --text-highlight-rgb: var(--red-highlighter);
+}
+
+mark.purple {
+    --text-highlight-rgb: var(--purple-highlighter);
+}
+
+mark.aqua {
+    --text-highlight-rgb: var(--aqua-highlighter);
+}
 
 .markdown-preview-view mark {
-    margin: 0 -0.25em; 
-    padding: 0.15em 0.25em;
-    border-radius: .2em;
-    /*border-radius: 0.8em 0.3em; */
-    background: transparent;
-    background-image: linear-gradient(105deg,
-    transparent 0,
-    transparent 0.3em,
-    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
-    rgba(var(--text-highlight-rgb), 0.4) 1.6em,
-    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
-    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
-    transparent calc(100% - 0.3em),
-    transparent 100%);
     -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(105deg, transparent 0, transparent 0.3em, rgba(var(--text-highlight-rgb), 0.7) 0.5em, rgba(var(--text-highlight-rgb), 0.4) 1.6em, rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em), rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em), transparent calc(100% - 0.3em), transparent 100%);
+    background: transparent;
+    border-radius: .2em;
+    border-radius: 0.8em 0.3em;
     box-decoration-break: clone;
-  /*text-shadow: 0 0 0.75em var(--background-primary-alt);*/
+    margin: 0 -0.25em;
+    padding: 0.15em 0.25em;
+    text-shadow: 0 0 0.75em var(--background-primary-alt);
+
+    /* */
+    /**/
 }
 
 .cm-s-obsidian span.cm-highlight {
-  padding:0.15em 0.25em;
-  background: var(--text-highlight-rgb);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  /*text-shadow: 0 0 0.75em var(--background-primary-alt);*/
+    -webkit-box-decoration-break: clone;
+    background: var(--text-highlight-rgb);
+    box-decoration-break: clone;
+    padding: 0.15em 0.25em;
+    text-shadow: 0 0 0.75em var(--background-primary-alt);
+
+    /**/
 }
 
-.cm-s-obsidian span.cm-formatting-highlight{
-  /*margin: 0 0 0 -0.4em;*/
-    padding: 0.15em 0.25em;
-    /*border-radius: 0.3em 0 0 0.3em; /*border radius of left highlight symbol in editor*/
-    /*border-radius: 0.8em 0 0 0.4em;*/
-    background: var(--text-highlight-rgb);
-    background-image: linear-gradient(105deg,
-    transparent 0,
-    transparent 0.3em,
-    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
-    rgba(var(--text-highlight-rgb), 0.4) 1.6em);
+.cm-s-obsidian span.cm-formatting-highlight {
     -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(105deg, transparent 0, transparent 0.3em, rgba(var(--text-highlight-rgb), 0.7) 0.5em, rgba(var(--text-highlight-rgb), 0.4) 1.6em);
+    background: var(--text-highlight-rgb);
+    border-radius: 0.3em 0 0 0.3em;
+    border-radius: 0.8em 0 0 0.4em;
     box-decoration-break: clone;
+    margin: 0 0 0 -0.4em;
+    padding: 0.15em 0.25em;
+
+    /**/
+    /* /*border radius of left highlight symbol in editor*/
+    /**/
 }
 
 .cm-s-obsidian .cm-highlight+span.cm-formatting-highlight {
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(105deg, rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em), rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em), transparent calc(100% - 0.3em), transparent 100%);
+    background: var(--text-highlight-rgb);
+    border-radius: 0 0.3em 0.3em 0;
+    border-radius: 0 0.4em 0.8em 0;
+    box-decoration-break: clone;
     margin: 0 -0.25em 0 0;
     padding: 0.15em 0.25em;
-    /*border-radius: 0 0.3em 0.3em 0; /*border radius of right highlight symbol in editor*/
-    /*border-radius: 0 0.4em 0.8em 0;*/
-    background: var(--text-highlight-rgb);
-    background-image: linear-gradient(105deg,
-    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
-    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
-    transparent calc(100% - 0.3em),
-    transparent 100%);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+
+    /* /*border radius of right highlight symbol in editor*/
+    /**/
 }
-
-
