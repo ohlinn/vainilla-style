@@ -8,18 +8,17 @@ GENERAL TABLE
 /* ------------------------------------*/
 .markdown-preview-view table {
     border-collapse: collapse;
-    border-radius: 2em;
     border-spacing: 0;
     max-width: 100% !important;
-    overflow-x: auto;
-    white-space: pre-wrap !important;
-    width: 80%;
+    overflow-x: visible;
+    white-space:pre-line !important;
+    width: 100%;
+    text-align: center;
 }
 
 .table-view-table>thead>tr>th {
     font-size: small !important;
 }
-
 /* Dataview table row coloring and highlighting */
 tbody tr:hover {
     border-color: rgb(149, 213, 234);
@@ -37,7 +36,7 @@ tr:nth-child(even) {
     border-color: rgb(149, 213, 234);
     border-style: solid;
     border-width: thin;
-    color: rgb(149, 213, 234);
+    color: var(--text-accent);
     font-size: 11px;
     font-weight: bold;
     padding: 5px 15px;
@@ -57,6 +56,8 @@ To make tables on the current page invisible, use:
     border: none;
     padding: 0px !important;
     text-align: center;
+    color: var(--text-accent);
+    font-weight: bolder;
 }
 
 .markdown-preview-view.invisible-tables td {
