@@ -4,101 +4,117 @@
 /* <s class="aside-hide"></s>
 /* <s class="aside-show"></s>
 /* <s class="aside-in"></s>
+mod 22-07-21 --> neumo style
 /*▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
 
 /*-Comments/Asides-*/
 /*Hide Aside and hover to reveal it*/
-.aside-hide {
-    text-decoration: unset;
-    text-align: justify;
-    font-style: normal;
-    color: transparent;
-    font-weight: unset;
-    float: right;
-    position: relative;
-    border-radius: 5px;
 
-    margin: .5em;
-    margin-right: -1.8em;
-    width: 1.5em;
-    height: 1.5em;
+.aside-hide {
+    /*background-color:var(--background-primary-alt);
+    border-radius:5px;*/
+    background-color: #e5e9f0;
+    border-radius: 5rem;
+    box-shadow: inset 3px 3px 6px var(--main-darken), inset -3px -3px 6px var(--main-lighten);
     clear: right;
-    overflow: hidden;
-    background-color: var(--background-primary-alt);
     color: transparent;
+    color: transparent;
+    float: right;
+    font-style: normal;
+    font-weight: unset;
+    height: 1.5em;
+    margin-right: -1.8em;
+    margin: .5em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-decoration: unset;
+    width: 1.5em;
 }
+
 .aside-hide:before {
-    display: block;
-    border-bottom: 2px solid var(--background-modifier-border);
-    content: "🗨 ";
-    color: none;
     border-radius: 5px;
-font-style: normal;
+    color: var(--text-accent); /*none*/
+    content: "🗫 |";/*"🗨 */
+    display: inline-block;
+    font-size: 1em;
+    font-style: normal;
+    margin-top: -.2em;
+    /* padding-left:.3em;
+   padding-top:.1em;*/
     text-shadow: 0 0 0 var(--interactive-accent);
-    font-size: 12px;
-    padding-top: .1em;
-    padding-left: .3em;
 }
+
 .aside-hide:hover {
-    white-space: normal;
-    text-overflow: unset;
+    background-color: #e5e9f0;
+    border-radius: 1rem;
+    /*border-right:2px solid var(--interactive-accent);*/
+    box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
     color: unset;
-    width: 400px;
+    font-size: calc(var(--font-normal) - 1px);
     font-style: normal;
     height: unset;
-    border-radius: 5px;
-    background-color: var(--background-primary-alt);
-    padding: 1em;
+    max-width: 40%;
     padding-top: .5em;
-    z-index: 3;
-    /*box-shadow: .5em .5em var(--outer-bar);*/
-    border-right: 2px solid var(--interactive-accent);
-}
-/*Show Aside*/
-.aside-show {
-    text-decoration: unset;
-    text-align: justify;
-    font-weight: unset;
-    float: right;
-    position: relative;
-    border-radius: 5px;
-    font-style: normal;
-    margin-right: -25.3em;
-    margin-bottom: .2em;
-    clear: right;
-    width: 400px;
-    background-color: var(--background-primary-alt);
     padding: 1em;
-    box-shadow: .2em .2em .2em var(--interactive-accent);}
-   /* border-right: .2em solid var(--interactive-accent);
-    border-bottom: .2em solid var(--interactive-accent);
+    text-overflow: unset;
+    white-space: normal;
+    width: fit-content;
+    z-index: 3;
 }
 
-/*Aside Inside the Note*/
-.aside-in {
-    text-decoration: none !important;
-    text-align: justify;
-    font-weight: unset;
-    float: right;
-    border-radius: 5px;
-    position: relative;
-    margin-bottom: .2em;
+/*Show Aside*/
+
+.aside-show {
+    background-color: #e5e9f0;
+    border-radius: 1rem;
+    /*   box-shadow:.2em .2em .2em var(--interactive-accent);*/
+    box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
     clear: right;
-    max-width: 18em;
+    float: right;
     font-style: normal;
-    width: auto;
-    background-color: var(--background-primary-alt);
+    font-weight: unset;
+    margin-bottom: .2em;
+    margin-right: -25.3em;
     padding: 1em;
-    box-shadow: .2em .2em .2em var(--interactive-accent);
+    position: relative;
+    text-align: justify;
+    text-decoration: unset;
+    width: 400px;
+}
+/*Aside Inside the Note*/
+
+.aside-in {
+    background-color: #e5e9f0;
+    border-color: var(--background-primary-alt);
+    border-radius: 1rem;
+    border-radius: 5px;
+    /*   box-shadow:.2em .2em .2em var(--interactive-accent);*/
+    box-shadow: inset 6px 6px 12px var(--main-darken), inset -6px -6px 12px var(--main-lighten);
+    clear: right;
+    float: right;
+    font-size: var(--font-small)!important;
+    font-style: normal;
+    font-weight: unset;
+    left: 1em;
+    margin-bottom: .2em;
+    max-width: 18em;
+    padding: 1em;
+    position: relative;
+    text-align: justify;
+    text-decoration: none!important;
+    width: auto;
     z-index: 3;
 }
 
 .aside-in .internal-embed.is-loaded:not(.image-embed),
 .aside-in .markdown-embed {
-    width:100%;
-}
-/*Shrink Scrollbar*/
-.aside > ::-webkit-scrollbar {
-    width: 5px;
+    width: 100%;
 }
 
+/*Shrink Scrollbar*/
+
+
+.aside>::-webkit-scrollbar {
+    width: 5px;
+}
