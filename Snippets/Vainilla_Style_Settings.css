@@ -1,58 +1,125 @@
 /*@settings
-
 name: Vainilla Style Settings
 id: Kustom
 settings:
-    - 
-        id: title2
-        title: General UI
+    -
+        id: title
+        title: Editor
         type: heading
-        level: 2
+        level: 1
+        collapsed: true
     - 
-        id: font-stack-editor
-        title: Editor font-family
+        id: editor-font
+        title: Editor font
         type: variable-text
-        default: default-editor
+        default: 'Victor Mono'
     - 
-        id: header-font
-        title: Header font-family
-        type: variable-text
-        default: "Bondi"
-    - 
-        id: header6-font
-        title: Header 6 font-family
-        type: variable-text
-        default: "KG Hard Candy Striped"
-    -
-        id: font-small
-        title: UI font-size
-        type: variable-number
-        default: 12
-        format: px
-    -
-        id: text-align
-        title: General text-align
-        type: variable-select
-        default: justify
-        options:
-            - center
-            - left
-            - right
-            - justify
-    -
-        id: Editor-title
-        title: Editor configuration 
+        id: editor_code
+        title: Code
         type: heading
-        level: 2
+        level: 3
+        collapsed: true
     -
-        id: color-shade
-        title: Markdown rendering Color
+        id: edr-code-font
+        title: Code font
+        type: variable-text
+        default: 'Victor Mono'
+    -
+        id: code-color
+        title: Code Color
         type: variable-select
         default: var(--text-normal)
         options:
-            -  var(--text-normal)
-            -  var(--text-muted)
-            -  var(--text-accent)
+            - var(--text-normal)
+            - var(--text-muted)
+            - var(--text-accent)
+    -
+        id: editor_internal
+        title: Internal links
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: edr-int-font
+        title: Internal link font-family
+        type: variable-text
+        default: 'Victor Mono'
+    -
+        id: edr-int-style
+        title: Internal link font-style
+        type: variable-select
+        default: normal
+        options:
+            - italic
+            - normal
+    -
+        id: edr-int-dec
+        title: Internal link decoration
+        type: variable-select
+        default: none
+        options:
+            - none
+            - underline
+    - 
+        id: editor_links
+        title: Links
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: edr-link-font
+        title: Link font
+        type: variable-text
+        default: 'Victor Mono'
+    -
+        id: edr-link-style
+        title: Link font-style
+        type: variable-select
+        default: normal
+        options:
+            - italic
+            - normal
+    -
+        id: edr-link-dec
+        title: Link decoration
+        type: variable-select
+        default: none
+        options:
+            - none
+            - underline
+    -
+        id: editor_tag
+        title: Tags
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: edr-tag-font
+        title: Tag font
+        type: variable-text
+        default: 'Victor Mono'
+    -
+        id: edr-tag-style
+        title: Tag font style
+        type: variable-select
+        default: normal
+        options:
+            - italic
+            - normal
+    -
+        id: edr-tag-dec
+        title: Tag decoration
+        type: variable-select
+        default: none
+        options:
+            - none
+            - underline
+    -
+        id: syntax
+        title: Syntax
+        type: heading
+        level: 3
+        collapsed: true
     -
         id: color-footnote
         title: Footnote rendering Color
@@ -63,38 +130,32 @@ settings:
             - var(--text-muted)
             - var(--text-accent)
     -
-        id: ed-family
-        title: In brackets font-family
-        type: variable-text
-        default: 'Victor Mono'
-    -
-        id: ed-style
-        title: In brackets font-style
-        type: variable-select
-        default: normal
-        options:
-            - italic
-            - normal
-    -
-        id: cd-title
-        title: Code Editor
-        type: header
+        id: preview
+        title: Preview
+        type: heading
+        level: 1
+        collapsed: true
+    - 
+        id: preview_code
+        title: Code
+        type: heading
         level: 3
-    -
-        id: cd-font
-        title: Code font-family
+        collapsed: true
+    - 
+        id: pre-code-font
+        title: Code font
         type: variable-text
         default: 'Victor Mono'
     -
-        id: cd-style
-        title: Code-inline font-style
+        id: pre-code-style
+        title: Code font-style
         type: variable-select
         default: normal
         options:
             - italic
             - normal
     -
-        id: cd-color
+        id: pre-code-color
         title: Code Color
         type: variable-select
         default: var(--text-normal)
@@ -103,132 +164,31 @@ settings:
             - var(--text-muted)
             - var(--text-accent)
     -
-        id: td-title
-        title: Tag Editor
-        type: heading
-        level: 3
-    -
-        id: td-font
-        title: Tag font-family
-        type: variable-text
-        default: 'Victor Mono'
-    -
-        id: td-style
-        title: Tag font-style
-        type: variable-select
-        default: normal
-        options:
-            - italic
-            - normal
-    -
-        id: td-dec
-        title: Tag decoration
-        type: variable-select
-        default: none
-        options:
-            - none
-            - underline
-    -
-        id: id-title
-        title: Editor i-links
-        type: heading
-        level: 3
-    -
-        id: id-font
-        title: Internal link font-family
-        type: variable-text
-        default: 'Victor Mono'
-    -
-        id: id-style
-        title: Internal link font-style
-        type: variable-select
-        default: normal
-        options:
-            - italic
-            - normal
-    -
-        id: id-dec
-        title: Internal link decoration
-        type: variable-select
-        default: none
-        options:
-            - none
-            - underline
-    -
-        id: pre-title
-        title: Preview style
-        type: heading
-        level: 2
-    -
-        id: pc-title
-        title: Code Preview
-        type: heading
-        level: 3
-    -
-        id: pc-font
-        title: Code font-family
-        type: variable-text
-        default: 'Victor Mono'
-    -
-        id: pc-style
-        title: Code-inline font-style
-        type: variable-select
-        default: normal
-        options:
-            - italic
-            - normal
-    -
-        id: pc-color
-        title: Code Color
-        type: variable-select
-        default: var(--text-normal)
-        options:
-            - var(--text-normal)
-            - var(--text-muted)
-            - var(--text-accent)
-    -
-        id: pc-weight
-        title: Weight Code
+        id: pre-code-weight
+        title: Code font weight 
         type: variable-number
         default: 500
     -
-        id: tp-title
-        title: Tag Preview
-        type: heading
-        level: 3
-    -
-        id: tp-font
-        title: Tag font-family
-        type: variable-text
-        default: 'Victor Mono'
-    -
-        id: tp-style
-        title: Tag font-style
+        id: pre-incode-style
+        title: Inline code font style
         type: variable-select
         default: normal
         options:
             - italic
-            - normal
-    -
-        id: tp-dec
-        title: Tag decoration
-        type: variable-select
-        default: none
-        options:
-            - none
-            - underline
+            - normal    
     -
         id: ip-title
         title: Preview i-links
         type: heading
         level: 3
+        collapsed: true
     -
-        id: ip-font
-        title: Internal link font-family
+        id: pre-inter-font
+        title: Internal link font
         type: variable-text
         default: 'Victor Mono'
     -
-        id: ip-style
+        id: pre-inter-style
         title: Internal link font-style
         type: variable-select
         default: normal
@@ -236,7 +196,7 @@ settings:
             - italic
             - normal
     -
-        id: ip-dec
+        id: pre-inter-dec
         title: Internal link decoration
         type: variable-select
         default: none
@@ -248,13 +208,14 @@ settings:
         title: External links
         type: heading
         level: 3
+        collapsed: true
     -
-        id: ep-font
-        title: External link font-family
+        id: pre-link-font
+        title: External link font
         type: variable-text
         default: 'Victor Mono'
     -
-        id: ep-style
+        id: pre-link-style
         title: External link font-style
         type: variable-select
         default: normal
@@ -262,20 +223,129 @@ settings:
             - italic
             - normal
     -
-        id: ep-dec
+        id: pre-link-dec
         title: External link decoration
         type: variable-select
         default: none
         options:
             - none
             - underline
-    - 
-        id: mp-title
-        title: Mermaid Preview
+    -
+        id: headers
+        title: Headers
         type: heading
         level: 3
-    -   
-        id: mp-scale
+        collapsed: true
+    - 
+        id: header1
+        title: Header 1
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: h1-font
+        title: Font family
+        type: variable-text
+        default: 'Cormorant Upright'
+    - 
+        id: h1-size
+        title: Font size
+        type: variable-number
+        default: 2
+        format: em
+    - 
+        id: header2
+        title: Header 2
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: h2-font
+        title: Font family
+        type: variable-text
+        default: 'Rammetto One'
+    - 
+        id: h2-size
+        title: Font size
+        type: variable-number
+        default: 1.8
+        format: em
+    - 
+        id: header3
+        title: Header 3
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: h3-font
+        title: Font family
+        type: variable-text
+        default: 'Rammetto One'
+    - 
+        id: h3-size
+        title: Font size
+        type: variable-number
+        default: 1.6
+        format: em
+    - 
+        id: header4
+        title: Header 4
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: h4-font
+        title: Font family
+        type: variable-text
+        default: 'Bondi'        
+    - 
+        id: h4-size
+        title: Font size
+        type: variable-number
+        default: 1.4
+        format: em
+    - 
+        id: header5
+        title: Header 5
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: h5-font
+        title: Font family
+        type: variable-text
+        default: 'Rammetto One'
+    - 
+        id: h5-size
+        title: Font size
+        type: variable-number
+        default: 1.2
+        format: em
+    - 
+        id: header6
+        title: Header 6
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: h6-font
+        title: Font family
+        type: variable-text
+        default: 'Rammetto One'
+    - 
+        id: h6-size
+        title: Font size
+        type: variable-number
+        default: 1
+        format: em
+    - 
+        id: preview_mermaid
+        title: Mermaid
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mer-scale
         title: Scale %
         type: variable-number-slider
         default: 100
@@ -283,12 +353,12 @@ settings:
         min: 5
         step: 5
     -
-        id: mp-font
+        id: mer-font
         title: Mermaid  font-family
         type: variable-text
         default: 'Victor Mono'
     -
-        id: mp-c
+        id: mer-color
         title: Mermaid font-color
         type: variable-select
         default: var(--text-normal)
@@ -297,17 +367,18 @@ settings:
             - var(--text-muted)
             - var(--text-accent)
     - 
-        id: mgp-title
+        id: preview-merm-graph
         title: Mermaid Graphs Preview
         type: heading
-        level: 3
+        level: 4
+        collapsed: true
     -
-        id: mp-s
+        id: mer-stroke
         title: Node stroke
         type: variable-number
         default: 0
     -
-        id: mp-fc
+        id: mer-fillcolor
         title: Node fill color
         type: variable-color
         opacity: true
@@ -318,224 +389,540 @@ settings:
                 format: rgb
         default: '#007AFF'
     -
-        id: mp-sw
+        id: mer-strokew
         title: Node stroke width
         type: variable-number
         default: 0
-        
+    -
+        id: preview_tags
+        title: Tags
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: pre-tag-font
+        title: Tag font
+        type: variable-text
+        default: 'Victor Mono'
+    -
+        id: pre-tag-style
+        title: Tag font-style
+        type: variable-select
+        default: normal
+        options:
+            - italic
+            - normal
+    -
+        id: pre-tag-dec
+        title: Tag decoration
+        type: variable-select
+        default: none
+        options:
+            - none
+            - underline
 */
-
-
-:root{
-    --default-editor: var(--text-editor);
-    --normal: var(--text-normal);
-    --muted: var(--text-muted);
-    --accent: var(--text-accent);
-}
-
-/*-------------------------------------*/
-/*Small font UI*/
-/*-------------------------------------*/
-.outline,
-.outline .pane-empty,
-.outline .collapsible-item-self,
-.search-input-container input,
-.side-dock-collapsible-section-header,
-.search-result-file-title,
-.search-empty-state,
-.search-input-container input::placeholder,
-.is-collapsed .search-result-file-title,
-.workspace-leaf-content .search-input,
-.footnotes-list,
-.frontmatter-container,
-.frontmatter-container .frontmatter-container-header,
-.markdown-preview-section .frontmatter code,
-.graph-controls .setting-item-name,
-.vertical-tab-nav-item,
-.frontmatter-container .tag,
-.cm-s-obsidian .cm-hmd-frontmatter,
-.cm-s-obsidian span.cm-hashtag,
-.cm-s-obsidian pre.HyperMD-footnote,
-.nav-file-title,
-.tree-item-self,
-.nav-folder-title,
-.tag-pane-tag,
-.tooltip,
-.document-search-button,
-.workspace > .workspace-split:not(.mod-root) .CodeMirror,
-.workspace > .workspace-split:not(.mod-root) .markdown-preview-view,
-.document-search-button,
-.cm-s-obsidian pre.HyperMD-footnote {
-  font-size:var(--font-small) !important;
-}
-
-/*-------------------------------------*/
-/*Editor font*/
-/*-------------------------------------*/
+/*
+oooooooooooo oooooooooo.   ooooo ooooooooooooo   .oooooo.   ooooooooo.   
+`888'     `8 `888'   `Y8b  `888' 8'   888   `8  d8P'  `Y8b  `888   `Y88. 
+ 888          888      888  888       888      888      888  888   .d88' 
+ 888oooo8     888      888  888       888      888      888  888ooo88P'  
+ 888    "     888      888  888       888      888      888  888`88b.    
+ 888       o  888     d88'  888       888      `88b    d88'  888  `88b.  
+o888ooooood8 o888bood8P'   o888o     o888o      `Y8bood8P'  o888o  o888o
+/*
+ .o88o.                           .   
+ 888 `"                         .o8   
+o888oo   .ooooo.  ooo. .oo.   .o888oo 
+ 888    d88' `88b `888P"Y88b    888   
+ 888    888   888  888   888    888   
+ 888    888   888  888   888    888 . 
+o888o   `Y8bod8P' o888o o888o   "888" */
 .markdown-source-view,
-.cm-s-obsidian .cm-formatting-hashtag, 
+.cm-s-obsidian .cm-formatting-hashtag,
 .cm-s-obsidian {
-  font-family:var(--font-stack-editor) !important;
+    font-family: var(--editor-font) !important;
 }
 
-/*-------------------------------------*/
-/* _hyphenation_and_justification      */
-/*-------------------------------------*/
-
-.cm-s-obsidian, .markdown-preview-view {
-    text-align: var(--text-align);  }
-
-
-
-
-/*-------------------------------------*/
-/* markdown rendering  color */
-/*-------------------------------------*/
-.cm-s-obsidian pre.HyperMD-footnote span.cm-link.cm-hmd-footnote.cm-formatting {
-    color: var(--color-footnote) !important;}
-
-.cm-s-obsidian span.cm-formatting-link, .cm-s-obsidian span.cm-formatting-image.cm-link, .cm-s-obsidian span.cm-formatting-link-string.cm-url.cm-string {
-    color: var(--color-shade) !important;}
-
-
-/*-------------------------------------*/
-/*EDITOR MODE*/
-/*-------------------------------------*/
-
-/*editor tag*/
-.cm-s-obsidian span.cm-hashtag {
-    text-decoration: var(--td-dec);
-    font-style: var(--td-style);
-    color: var(--accent-80);
-    font-family: var(--td-font)!important;
-    font-size: var(--text-normal)!important;
-}
-
-/*INTERNAL LINKS*/
-.cm-s-obsidian span.cm-hmd-internal-link {
-    color: var(--text-accent);
-    font-style: var(--id-style);
-    text-decoration: var(--id-dec);
-    font-family: var(--id-font);
-  }
-
-  /*LINK TO NO PAGE*/
-      /*Link to No Page*/
-.markdown-preview-view .internal-link.is-unresolved {
-    opacity: 1;
-    color: var(--shade-50);
-}
-.markdown-preview-view .internal-link.is-unresolved:hover {
-    color: var(--accent-50);
-}
-/*EXTERNAL LINKS*/
+/*                          
+oooo   o8o              oooo                                                                                                                                                                                                          
+`888   `"'              `888                                                                                                                                                                                                          
+ 888  oooo  ooo. .oo.    888  oooo   .oooo.o                                                                                                                                                                                          
+ 888  `888  `888P"Y88b   888 .8P'   d88(  "8                                                                                                                                                                                          
+ 888   888   888   888   888888.    `"Y88b.                                                                                                                                                                                           
+ 888   888   888   888   888 `88b.  o.  )88b                                                                                                                                                                                          
+o888o o888o o888o o888o o888o o888o 8""888P'                    
 /*Link in parentheses*/
 .cm-s-obsidian span.cm-url {
-    color: var(--shade-50)!important;
+    color: var(--shade-50) !important;
     text-decoration: none;
 }
 
-/*FOOTNOTE*/
-/* editor footnote link*/
+/*text in corchetes*/
 .cm-s-obsidian span.cm-link {
-	color: var(--accent-80);
-	font-family: var(--ed-family);
-    font-style: var(--ed-style);
-	font-size: var(--font-normal);
-;
+    color: var(--accent-80);
+    font-family: var(--edr-link-font);
+    font-size: var(--font-normal);
+    font-style: var(--edr-link-style);
 }
 
-/*CODE*/
-/* code editor */
+/*
+ o8o                  .                                            oooo  
+ `"'                .o8                                            `888  
+oooo  ooo. .oo.   .o888oo  .ooooo.  oooo d8b ooo. .oo.    .oooo.    888  
+`888  `888P"Y88b    888   d88' `88b `888""8P `888P"Y88b  `P  )88b   888  
+ 888   888   888    888   888ooo888  888      888   888   .oP"888   888  
+ 888   888   888    888 . 888    .o  888      888   888  d8(  888   888  
+o888o o888o o888o   "888" `Y8bod8P' d888b    o888o o888o `Y888""8o o888o                                                                         
+*/
+.cm-s-obsidian span.cm-hmd-internal-link {
+    color: var(--text-accent);
+    font-family: var(--edr-int-font);
+    font-style: var(--edr-int-style);
+    text-decoration: var(--edr-int-dec);
+}
+
+/*Link to No Page*/
+.markdown-preview-view .internal-link.is-unresolved {
+    color: var(--shade-50);
+    opacity: 1;
+}
+
+.markdown-preview-view .internal-link.is-unresolved:hover {
+    color: var(--accent-50);
+}
+
+/*                                                           
+    .                                 
+  .o8                                 
+.o888oo  .oooo.    .oooooooo  .oooo.o 
+  888   `P  )88b  888' `88b  d88(  "8 
+  888    .oP"888  888   888  `"Y88b.  
+  888 . d8(  888  `88bod8P'  o.  )88b 
+  "888" `Y888""8o `8oooooo.  8""888P' 
+                  d"     YD           
+                  "Y88888P'
+*/
+.cm-s-obsidian span.cm-hashtag {
+    color: var(--accent-80);
+    font-family: var(--edr-tag-font) !important;
+    font-size: var(--text-normal) !important;
+    font-style: var(--edt-tag-style);
+    text-decoration: var(--edr-tag-dec);
+}
+
+/*
+                          .o8            
+                         "888            
+ .ooooo.   .ooooo.   .oooo888   .ooooo.  
+d88' `"Y8 d88' `88b d88' `888  d88' `88b 
+888       888   888 888   888  888ooo888 
+888   .o8 888   888 888   888  888    .o 
+`Y8bod8P' `Y8bod8P' `Y8bod88P" `Y8bod8P'
+*/
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian pre.HyperMD-codeblock {
-	color: var(--cd-color);
-	font-family: var(--cd-font);
+    color: var(--code-color);
+    font-family: var(--edr-code-font);
 }
-/*INLINE CODE*/
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight){
-    font-style: var(--cd-style)!important;}
 
+/*
+ .o88o.                         .                             .             
+ 888 `"                       .o8                           .o8             
+o888oo   .ooooo.   .ooooo.  .o888oo ooo. .oo.    .ooooo.  .o888oo  .ooooo.  
+ 888    d88' `88b d88' `88b   888   `888P"Y88b  d88' `88b   888   d88' `88b 
+ 888    888   888 888   888   888    888   888  888   888   888   888ooo888 
+ 888    888   888 888   888   888 .  888   888  888   888   888 . 888    .o 
+o888o   `Y8bod8P' `Y8bod8P'   "888" o888o o888o `Y8bod8P'   "888" `Y8bod8P' 
+*/
+/* editor footnote link*/
+/*
+                                     .                         
+                                   .o8                         
+ .oooo.o oooo    ooo ooo. .oo.   .o888oo  .oooo.   oooo    ooo 
+d88(  "8  `88.  .8'  `888P"Y88b    888   `P  )88b   `88b..8P'  
+`"Y88b.    `88..8'    888   888    888    .oP"888     Y888'    
+o.  )88b    `888'     888   888    888 . d8(  888   .o8"'88b   
+8""888P'     .8'     o888o o888o   "888" `Y888""8o o88'   888o 
+         .o..P'                                                
+         `Y8P'
+*/
+.cm-s-obsidian pre.HyperMD-footnote span.cm-link.cm-hmd-footnote.cm-formatting {
+    color: var(--color-footnote) !important;
+}
 
+.cm-s-obsidian span.cm-formatting-link,
+.cm-s-obsidian span.cm-formatting-image.cm-link,
+.cm-s-obsidian span.cm-formatting-link-string.cm-url.cm-string {
+    color: var(--color-shade) !important;
+}
 
+/*
+ooooooooo.   ooooooooo.   oooooooooooo oooooo     oooo ooooo oooooooooooo oooooo   oooooo     oooo 
+`888   `Y88. `888   `Y88. `888'     `8  `888.     .8'  `888' `888'     `8  `888.    `888.     .8'  
+ 888   .d88'  888   .d88'  888           `888.   .8'    888   888           `888.   .8888.   .8'   
+ 888ooo88P'   888ooo88P'   888oooo8       `888. .8'     888   888oooo8       `888  .8'`888. .8'    
+ 888          888`88b.     888    "        `888.8'      888   888    "        `888.8'  `888.8'     
+ 888          888  `88b.   888       o      `888'       888   888       o      `888'    `888'      
+o888o        o888o  o888o o888ooooood8       `8'       o888o o888ooooood8       `8'      `8'                                                                                                   
+       */
+/*
+    .                        /*         
+  .o8                                 
+.o888oo  .oooo.    .oooooooo  .oooo.o 
+  888   `P  )88b  888' `88b  d88(  "8 
+  888    .oP"888  888   888  `"Y88b.  
+  888 . d8(  888  `88bod8P'  o.  )88b 
+  "888" `Y888""8o `8oooooo.  8""888P' 
+                  d"     YD           
+                  "Y88888P'           
+                                   */
+.tag {
+    font-family: var(--pre-tag-font);
+    font-style: var(--pre-tag-style);
+    text-decoration: var(--pre-tag-dec) !important;
+}
 
-
-  /*PREVIEW*/
-/*TAGS*/
-.tag{
-	font-family: var(--tp-font);
-	text-decoration:var(--tp-dec)!important;
-	font-style: var(--tp-style);}
-    
-    
-/*INTERNAL LINKS*/
-
+/*
+ o8o                  .                                            oooo       
+ `"'                .o8                                            `888       
+oooo  ooo. .oo.   .o888oo  .ooooo.  oooo d8b ooo. .oo.    .oooo.    888       
+`888  `888P"Y88b    888   d88' `88b `888""8P `888P"Y88b  `P  )88b   888       
+ 888   888   888    888   888ooo888  888      888   888   .oP"888   888       
+ 888   888   888    888 . 888    .o  888      888   888  d8(  888   888       
+o888o o888o o888o   "888" `Y8bod8P' d888b    o888o o888o `Y888""8o o888o                                                                              
+                            */
 .links-int-on .markdown-preview-view .internal-link,
 .markdown-preview-view .internal-link {
-	font-family: var(--ip-font);
-	text-decoration:var(--ip-dec)!important;
-	font-style: var(--ip-style);
+    font-family: var(--pre-inter-font);
+    font-style: var(--pre-inter-style);
+    text-decoration: var(--pre-inter-dec) !important;
 }
 
-/*EXTERNAL LINKS*/
+/*
+oooo   o8o              oooo                 
+`888   `"'              `888                 
+ 888  oooo  ooo. .oo.    888  oooo   .oooo.o 
+ 888  `888  `888P"Y88b   888 .8P'   d88(  "8 
+ 888   888   888   888   888888.    `"Y88b.  
+ 888   888   888   888   888 `88b.  o.  )88b 
+o888o o888o o888o o888o o888o o888o 8""888P' 
+              */
 .links-ext-on .external-link,
 .external-link {
-	font-family: var(--ep-font);
-	text-decoration:var(--ep-dec)!important;
-	font-style: var(--ep-style);}
+    font-family: var(--pre-link-font);
+    font-style: var(--pre-link-style);
+    text-decoration: var(--pre-link-dec) !important;
+}
 
-
-/*CODE*/
-/*CODE PREVIEW*/
-
+/*
+                          .o8            
+                         "888            
+ .ooooo.   .ooooo.   .oooo888   .ooooo.  
+d88' `"Y8 d88' `88b d88' `888  d88' `88b 
+888       888   888 888   888  888ooo888 
+888   .o8 888   888 888   888  888    .o 
+`Y8bod8P' `Y8bod8P' `Y8bod88P" `Y8bod8P' 
+               */
 .markdown-preview-view code {
-    color: var(--pc-color);
-    font-family: var(--pc-font)!important;
-    font-style: var(--pc-style);
-    font-weight: var(--pc-weight);}
-/*-------------------------------------*/
+    color: var(--pre-code-color);
+    font-family: var(--pre-code-font) !important;
+    font-style: var(--pre-code-style);
+    font-weight: var(--pre-code-weight);
+}
 
-/*Mermaid*/
-  
- 
+/*INLINE CODE*/
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
+    font-style: var(--pre-incode-style) !important;
+}
+
+/*
+                                                                  o8o        .o8  
+                                                                  `"'       "888  
+ooo. .oo.  .oo.    .ooooo.  oooo d8b ooo. .oo.  .oo.    .oooo.   oooo   .oooo888  
+`888P"Y88bP"Y88b  d88' `88b `888""8P `888P"Y88bP"Y88b  `P  )88b  `888  d88' `888  
+ 888   888   888  888ooo888  888      888   888   888   .oP"888   888  888   888  
+ 888   888   888  888    .o  888      888   888   888  d8(  888   888  888   888  
+o888o o888o o888o `Y8bod8P' d888b    o888o o888o o888o `Y888""8o o888o `Y8bod88P"                                                                                  
+                       */
 .node rect,
 .node circle,
 .node ellipse,
 .node polygon,
 .node path {
-  fill: var(--mp-fc) !important;
-  stroke: var(--mp-s) !important;
-  stroke-width: var(--mp-sw)    !important;
-  padding: 0px!important;
+    fill: var(--mer-fillcolor) !important;
+    padding: 0vw !important;
+    stroke-width: var(--mer-strokew) !important;
+    stroke: var(--mer-stroke) !important;
 }
 
 .label {
-  font-family:var(--mp-font) !important;
-  color: var(--mp-c) !important;
-  padding: 0px!important;
-
+    color: var(--mer-color) !important;
+    font-family: var(--mer-font) !important;
+    padding: 0vw !important;
 }
 
-
 .small-mermaid .mermaid {
-    transform: scale(calc(var(--mp-scale)/100));
+    transform: scale(calc(var(--mer-scale)/100));
+}
+
+/*
+oooo                                  .o8   o8o                                  
+`888                                 "888   `"'                                  
+ 888 .oo.    .ooooo.   .oooo.    .oooo888  oooo  ooo. .oo.    .oooooooo  .oooo.o 
+ 888P"Y88b  d88' `88b `P  )88b  d88' `888  `888  `888P"Y88b  888' `88b  d88(  "8 
+ 888   888  888ooo888  .oP"888  888   888   888   888   888  888   888  `"Y88b.  
+ 888   888  888    .o d8(  888  888   888   888   888   888  `88bod8P'  o.  )88b 
+o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" o888o o888o o888o `8oooooo.  8""888P' 
+                                                             d"     YD           
+                                                             "Y88888P'
+*/
+/*oo          .o  
+`888        o888  
+ 888 .oo.    888  
+ 888P"Y88b   888  
+ 888   888   888  
+ 888   888   888  
+o888o o888o o888o
+div[data-tag-name="h1"] {
+}*/
+h1 {
+    -webkit-background-clip: text;
+    -webkit-filter: drop-shadow(-4px -4px 4px var(--main-lighten));
+    background-clip: text;
+    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+    color: transparent !important;
+    display: block;
+    filter: drop-shadow(4px 4px 4px var(--main-darken));
+    font-family: var(--h1-font) !important;
+    font-size: var(--h1-size) !important;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.is-collapsed>h1 {
+    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+    color: var(--text-accent) !important;
+    text-shadow: -4px -4px 4px var(--main-lighten), 4px 4px 4px var(--main-darken);
+}
+
+h1:after {
+    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+    border-radius: 2em;
+    box-shadow: -4px -4px 8px var(--main-lighten), 4px 4px 8px var(--main-darken);
+    content: "";
+    display: block;
+    height: .1em;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+/*
+oooo          .oooo.   
+`888        .dP""Y88b  
+ 888 .oo.         ]8P' 
+ 888P"Y88b      .d8P'  
+ 888   888    .dP'     
+ 888   888  .oP     .o 
+o888o o888o 8888888888                       
+             */
+div[data-tag-name="h2"] {
+    text-align: center !important;
+}
+
+h2 {
+    color: var(--accent-90) !important;
+    display: inline-block;
+    font-family: var(--h2-font) !important;
+    font-size: var(--h2-size) !important;
+    text-align: center;
+    text-shadow: -4px -4px 4px var(--main-lighten), 4px 4px 4px var(--main-darken);
+    text-transform: uppercase;
+    width: 90%;
+}
+
+h2:after {
+    background: var(--text-accent);
+    border-radius: 2em;
+    box-shadow: -4px -4px 8px var(--main-lighten), 4px 4px 8px var(--main-darken);
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+}
+
+/*
+oooo          .oooo.   
+`888        .dP""Y88b  
+ 888 .oo.         ]8P' 
+ 888P"Y88b      <88b.  
+ 888   888       `88b. 
+ 888   888  o.   .88P  
+o888o o888o `8bd88P'                       
+*/
+div[data-tag-name="h3"] {
+    text-align: center !important;
+}
+
+h3 {
+    color: var(--accent-90) !important;
+    display: inline-block;
+    font-family: var(--h3-font) !important;
+    font-size: var(--h3-size) !important;
+    text-shadow: -4px -4px 4px var(--main-lighten), 4px 4px 4px var(--main-darken);
+    text-transform: uppercase;
+    width: 80%;
+}
+
+h3:after {
+    background-color: var(--accent-90);
+    border-radius: 2em;
+    box-shadow: -2px -2px 2px var(--background-primary), 2px 2px 2px var(--main-darken);
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+}
+
+/*
+oooo              .o   
+`888            .d88   
+ 888 .oo.     .d'888   
+ 888P"Y88b  .d'  888   
+ 888   888  88ooo888oo 
+ 888   888       888   
+o888o o888o     o888o                       
+*/
+h4 {
+    color: var(--accent-90) !important;
+    font-family: var(--h4-font) !important;
+    font-size: var(--h4-size) !important;
+    text-align: center !important;
+    text-decoration: underline wavy;
+    text-shadow: -4px -4px 4px var(--main-lighten), 4px 4px 4px var(--main-darken);
+    width: fit-content;
+}
+
+/*
+h4:after {
+      background-color: var(--accent-90);
+      border-radius: 2em;
+      box-shadow: -2px -2px 2px var(--background-primary), 2px 2px 2px var(--main-darken);
+      content: "";
+      display: block;
+      height: .1em;
+      width: 100%;
   }
-  
+/*
+oooo          oooooooo 
+`888         dP""""""" 
+ 888 .oo.   d88888b.   
+ 888P"Y88b      `Y88b  
+ 888   888        ]88  
+ 888   888  o.   .88P  
+o888o o888o `8bd88P'                       
+*/
+h5 {
+    color: var(--accent-90) !important;
+    font-family: var(--h5-font) !important;
+    font-size: var(--h5-size) !important;
+    text-decoration: underline wavy;
+    text-shadow: -4px -4px 4px var(--main-lighten), 4px 4px 4px var(--main-darken);
+    width: fit-content;
+}
+
+/*
+h5:after {
+      background-color: var(--accent-90);
+      border-radius: 2em;
+      box-shadow: -2px -2px 2px var(--background-primary), 2px 2px 2px var(--main-darken);
+      content: "";
+      display: block;
+      height: .1em;
+      width: 100%;
+  }
+/*
+oooo            .ooo   
+`888          .88'     
+ 888 .oo.    d88'      
+ 888P"Y88b  d888P"Ybo. 
+ 888   888  Y88[   ]88 
+ 888   888  `Y88   88P 
+o888o o888o  `88bod8'  
+*/
+h6 {
+    color: var(--accent-90) !important;
+    font-family: var(--h6-font) !important;
+    font-size: var(--h6-size) !important;
+    font-style: normal !important;
+    text-decoration: underline dashed;
+    text-shadow: -4px -4px 4px var(--main-lighten), 4px 4px 4px var(--main-darken);
+    text-transform: none;
+    width: fit-content;
+}
+
+/*
+h6:after {
+      background-color: var(--accent-90);
+      border-radius: 2em;
+      box-shadow: -2px -2px 2px var(--background-primary), 2px 2px 2px var(--main-darken);
+      content: "";
+      display: block;
+      height: .1em;
+      width: 100%;
+  }
+/*
+                .o8   o8o      .                      
+               "888   `"'    .o8                      
+ .ooooo.   .oooo888  oooo  .o888oo  .ooooo.  oooo d8b 
+d88' `88b d88' `888  `888    888   d88' `88b `888""8P 
+888ooo888 888   888   888    888   888   888  888     
+888    .o 888   888   888    888 . 888   888  888     
+`Y8bod8P' `Y8bod88P" o888o   "888" `Y8bod8P' d888b                                                      
+oooo                                  .o8   o8o                         
+`888                                 "888   `"'                         
+ 888 .oo.    .ooooo.   .oooo.    .oooo888  oooo  ooo. .oo.    .oooooooo 
+ 888P"Y88b  d88' `88b `P  )88b  d88' `888  `888  `888P"Y88b  888' `88b  
+ 888   888  888ooo888  .oP"888  888   888   888   888   888  888   888  
+ 888   888  888    .o d8(  888  888   888   888   888   888  `88bod8P'  
+o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" o888o o888o o888o `8oooooo.  
+                                                             d"     YD  
+                                                             "Y88888P'                                                                        
+oooo   o8o                                 
+`888   `"'                                 
+ 888  oooo  ooo. .oo.    .ooooo.   .oooo.o 
+ 888  `888  `888P"Y88b  d88' `88b d88(  "8 
+ 888   888   888   888  888ooo888 `"Y88b.  
+ 888   888   888   888  888    .o o.  )88b 
+o888o o888o o888o o888o `Y8bod8P' 8""888P'                                           
+*/
+.cm-s-obsidian pre.HyperMD-header:after {
+    background-image: linear-gradient(45deg, var(--accent-50), var(--background-primary));
+    background: var(--accent-30);
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    width: 100%;
+}
+
+/* first style version,
+headers:
 
 h1,
 h2,
 h3,
 h4,
-h5{
-    color: var(--accent-90)!important;
-    letter-spacing: 3px;
+h5 {
+    color: var(--accent-90) !important;
     font-family: var(--header-font);
+    letter-spacing: 3px;
 }
 
 h6 {
-    color: var(--accent-90)!important;
-    letter-spacing: 2px;
+    color: var(--accent-90) !important;
     font-family: var(--header6-font);
-    font-style: normal!important;
-
-}
+    font-style: normal !important;
+    letter-spacing: 2px;
+}/*
