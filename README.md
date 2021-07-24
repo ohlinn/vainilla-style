@@ -1,13 +1,6 @@
 <h1 align="center">VAINILLA STYLE</h1>
 <p align="center">Modded snippets for my personal Obsidian theme.</p>
 
-<p align="center"><img src="Screenshots/light-mode.png" width="20%"><img src="Screenshots/Editor-light.png" width="20%"><img src="Screenshots/dark-mode.png" width="20%"><img src="Screenshots/editor-dark.png" width="20%"></p>
-
-Newer updates july2021:
-
-
-<p align="center"><img src="Screenshots/preview.png" width="45%"><img src="Screenshots/darkprev.png" width="45%"></p>
-
 
 ## ABOUT
 - All my snippets mods are adjusted so they can work with the [California Coast Theme](https://github.com/mgmeyers/obsidian-california-coast-theme). 
@@ -23,9 +16,7 @@ My template for my daily note, with a progress bar.
 The html example is [here](dailyNote/Dailynote.md), with a sample and the templater codes.
 Adapted from some codepen snippets: [progress bar](https://codepen.io/AbdulrahmanMasoud/pen/oNgKoxj), [typography](https://codepen.io/kvendrik/pen/nfjas). [Neumorphism style](https://neumorphism.io/ ) was very helpful.
     
-    
-<img src="Screenshots/dailynote-light.png" width="65%">
-<img src="Screenshots/dailynote-dark.png" width="45%">
+<img src="Screenshots/dailynote-light.png" width="50%"><img src="Screenshots/dailynote-dark.png" width="50%">
 
 
 ## [Vainilla Style Settings](Snippets/Vainilla_Style_Settings.css)
@@ -230,3 +221,9 @@ Vim mode with line focus. [Source](https://forum.obsidian.md/t/meta-post-common-
   - External links: Trochut
   - Mermaid font: Alegreya Sans SC
 
+
+## Screenshots
+<p align="center"><img src="Screenshots/light-mode.png" width="20%"><img src="Screenshots/Editor-light.png" width="20%"><img src="Screenshots/dark-mode.png" width="20%"><img src="Screenshots/editor-dark.png" width="20%"></p>
+
+Newer updates july2021:
+<p align="center"><img src="Screenshots/preview.png" width="45%"><img src="Screenshots/darkprev.png" width="45%"></p>
