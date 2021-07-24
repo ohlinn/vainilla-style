@@ -11,9 +11,11 @@
 - [Individual Snippets](#snippets)
 - The changed elements from my previous styles are in the snippets as comments.
 
-## [Daily Note](dailyNote/Dailynote.css)
+## [Daily Note](https://github.com/ohlinn/vainilla-style/blob/68df1388dac72d1782150697df18f0dbd7491e16/dailyNote/Dailynote.css)
 My template for my daily note, with a progress bar. 
-The html example is [here](dailyNote/Dailynote.md), with a sample and the templater codes.
+
+The html example is [here](https://github.com/ohlinn/vainilla-style/blob/68df1388dac72d1782150697df18f0dbd7491e16/dailyNote/DailyNote.md), with a sample and the templater codes.
+
 Adapted from some codepen snippets: [progress bar](https://codepen.io/AbdulrahmanMasoud/pen/oNgKoxj), [typography](https://codepen.io/kvendrik/pen/nfjas). [Neumorphism style](https://neumorphism.io/ ) was very helpful.
     
 <img src="Screenshots/dailynote-light.png" width="50%"><img src="Screenshots/dailynote-dark.png" width="50%">
