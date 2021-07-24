@@ -1,16 +1,15 @@
 ## Templater
 - My Title format: 'YY-MM-DD'
-- My Title format: 'YY-MM-DD'
-- Manually replace {{}} with your template of your periodic notes. 
+- Manually replace the {{}} text with your template of your periodic notes. 
 
-| Replace this |   with your personalized template as usual. Ex: |
+| Replace this  |   with your personalized template as usual. Example:|
 |-|-|
-|{{yourMonth}}|`<% tp.date.now('YY-MM-00', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`|
-|{{yourWeek}} | `<% tp.date.now('YY-[w]ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`|
-|{{yourQuarter}}|`<% tp.date.now('YY-[Quarter]Q', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`  |
-|{{yourYear}}|`<% tp.date.now('YYYY', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>` |
-|{{yourPrevD}}| `<% tp.date.now('YY-MM-DD', -1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`|
-|{{yourNextD}}|`<% tp.date.now('YY-MM-DD', 1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`|
+|{{yourMonth}}  |`<% tp.date.now('YY-MM-00', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`      |
+|{{yourWeek}}   |`<% tp.date.now('YY-[w]ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`      |
+|{{yourQuarter}}|`<% tp.date.now('YY-[Quarter]Q', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>` |
+|{{yourYear}}   |`<% tp.date.now('YYYY', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`          |
+|{{yourPrevD}}  |`<% tp.date.now('YY-MM-DD', -1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`     |
+|{{yourNextD}}  |`<% tp.date.now('YY-MM-DD', 1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`      |
 
 ### HTML Templater
 ```
@@ -28,7 +27,7 @@
             week <% tp.date.now('ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
     </div>
     <div class='left'><a class='internal-link' id='small-link'
-            href='{{yourPrevD}}</a>.md'>yesterday</a>
+            href='{{yourPrevD}}.md'>yesterday</a>
         🟊 <a class='internal-link' id='small-link'
             href='{{yourNextD}}.md'>tomorrow</a>
     </div>
@@ -81,7 +80,7 @@
             week <% tp.date.now('ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
     </div>
     <div class='left'><a class='internal-link' id='small-link'
-            href='{{yourPrevD}}</a>.md'>yesterday</a>
+            href='<% tp.date.now('YY-MM-DD', -1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>yesterday</a>
         🟊 <a class='internal-link' id='small-link'
             href='<% tp.date.now('YY-MM-DD', 1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>tomorrow</a>
     </div>
@@ -90,7 +89,8 @@
 <div class='bars-progres'>
     <div class='time'>
         <a class='internal-link' id='big-link'
-            href='<% tp.date.now('YY-MM-00', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'><% tp.date.now('MMMM', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
+            href='<% tp.date.now('YY-MM-00', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>
+            <% tp.date.now('MMMM', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
     </div>
     <div class='left'>🝮
         <% moment(moment(tp.file.title, 'YY-MM-DD').endOf('month')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %>
@@ -128,7 +128,8 @@
 </div>
 <div class='bars'><div class='bars-progres'>
     <div class='time'><a class='internal-link' id='big-link' href='21-w29.md'>week 29</a></div>
-    <div class='left'><a class='internal-link' id='small-link' href='21-07-23.md'>yesterday</a> 🟊 <a class='internal-link' id='small-link' href='21-07-25.md'>tomorrow</a></div>
+    <div class='left'><a class='internal-link' id='small-link' href='21-07-23.md'>yesterday</a>
+    🟊 <a class='internal-link' id='small-link' href='21-07-25.md'>tomorrow</a></div>
     <progress value='6' max='7'></div>
 <div class='bars-progres'>
     <div class='time'><a class='internal-link' id='big-link' href='21-07-00.md'>julio</a></div>
@@ -139,7 +140,7 @@
     <div class='left'>🝮 68 days left</div>
     <progress value='24' max='92'></div>
 <div class='bars-progres'>
-    <div class='time'><a class='internal-link' id='big-link' href='2021.md'</a>Day #205</a></div>
+    <div class='time'><a class='internal-link' id='big-link' href='2021.md'>Day #205</a></div>
     <div class='left'>🝮 160 days left</div>
     <progress value='205' max='365'>
 </div></div>
