@@ -11,178 +11,180 @@ d88' `888  `P  )88b  `888   888   `88.  .8'       `888P"Y88b  d88' `88b   888   
         for: obsidian.md
         by: vainille
         date: 21-07-2021
-
 Adapted from:
     * progress bar --> https://codepen.io/AbdulrahmanMasoud/pen/oNgKoxj
     * typography --> https://codepen.io/kvendrik/pen/nfjas
 Tools:
-    * neumorphism style --> https://neumorphism.io/ 
-    
+    * neumorphism style --> https://neumorphism.io/    
     */
-
-
 /*colors*/
 .theme-light {
-    --main--b: #e5e9f0;
-    --main-darken: #cccfd6;
-    --main-lighten: #feffff;
-    --main--c: #0f111a;
-}
-
+        --main--b: #e5e9f0;
+        --main--c: #0f111a;
+        --main-darken: #cccfd6;
+        --main-lighten: #feffff;
+  }
 .theme-dark {
-    --main--b: #0f111a;
-    --main-darken: #06070a;
-    --main-lighten: #202020!important;
-    --main--c: #e5e9f0;
-}
+        --main--b: #0f111a;
+        --main--c: #e5e9f0;
+        --main-darken: #06070a;
+        --main-lighten: #202020!important;
+  }
 /* ▰▰▰ TITLE ▰▰▰*/
-
 .daily {
-    align-content: center;
-    display: inline-block;
-    padding: 0.5vw 1vw;
-    text-align: center;
-    width: 100%;
-}
-
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: .5em;
+        justify-content: space-between;
+        padding: 0em;
+        text-align: center;
+        width: 100%;
+  }
 .daily .todayday {
-    background-clip: text;
-    background-image: url(http://media-cache-ak0.pinimg.com/236x/79/e8/db/79e8dbe5b67d36cc7f8c1f80167f8bb8.jpg);
-    color: transparent;
-    font-size: 3em;
-    font-weight: 900;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-}
-
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url(http://media-cache-ak0.pinimg.com/236x/79/e8/db/79e8dbe5b67d36cc7f8c1f80167f8bb8.jpg);
+        color: transparent;
+        display:inline-block;
+        font-family: "Faune";
+        font-size: 3em;
+        font-weight: 900;
+        text-size-adjust: auto;
+        text-transform: uppercase;
+        width: -moz-min-content;
+        width: -webkit-min-content;
+        width: fit-content;
+  }
 .daily .todaymonth {
-    background-clip: text;
-    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
-    color: transparent;
-    font-size: 2em;
-    font-weight: 900;
-    text-transform: uppercase;
-    -webkit-animation: 8s movebg infinite alternate;
-    -webkit-animation-play-state: paused;
-    -webkit-animation-timing-function: ease;
-    -webkit-background-clip: text;
-}
-
-
+        -ms-flex-wrap: nowrap;
+        -webkit-animation-play-state: paused;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation: 8s movebg infinite alternate;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+        color: transparent;
+        display: inline-block;
+        font-family: "Tracks";
+        font-size: 2em;
+        font-weight: 900;
+        text-transform: none;
+        width: -moz-min-content;
+        width: -webkit-min-content;
+        width: fit-content;
+  }
 /* ▰▰▰ LINKS STYLE ▰▰▰*/
-
 #big-link::before {
-    color: var(--main--c);
-    text-shadow: 3px 3px 12px var(--main-darken), -3px -3px 12px var(--main-lighten);
-}
-
+        color: var(--main--c);
+        text-shadow: .2em .2em .5em var(--main-darken), -.2em -.2em .5em var(--main-lighten);
+  }
 #big-link {
-    background-clip: text;
-    background-color: var(--main--b);
-    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
-    border-radius: 1em;
-    box-shadow: 3px 3px 12px var(--main-darken), -3px -3px 12px var(--main-lighten);
-    color: transparent;
-    font-size: 1.5em;
-    font-weight: 900;
-    margin-bottom: 10px;
-    padding: .15em 1em;
-    text-transform: uppercase;
-    -webkit-animation: 8s movebg infinite alternate;
-    -webkit-animation-play-state: paused;
-    -webkit-animation-timing-function: ease;
-    -webkit-background-clip: text;
-}
-
+        -ms-flex-wrap: nowrap;
+        -webkit-animation-play-state: paused;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation: 8s movebg infinite alternate;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-color: var(--main--b);
+        background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+        color: transparent;
+        font-family: "Faune"!important;
+        font-size: 1.2em;
+        font-style: normal !important;
+        font-weight: 900;
+        padding: .30em;
+        text-transform: uppercase;
+  }
 #big-link:hover {
-    color: cornflowerblue;
-    font-size: 1.5em;
-    font-weight: 900;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+      -ms-flex-wrap: nowrap;
+      color: cornflowerblue;
+      font-size: 1.2em;
+      font-weight: 900;
+      text-transform: uppercase;
+      width: -moz-min-content;
+      width: -webkit-min-content;
+      width: fit-content;
 }
-
 #small-link {
-    background-clip: text;
-    background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
-    color: transparent;
-    font-weight: 900;
-    margin-bottom: 10px;
-    padding: .15em 1em;
-    -webkit-animation: 8s movebg infinite alternate;
-    -webkit-animation-play-state: paused;
-    -webkit-animation-timing-function: ease;
-    -webkit-background-clip: text;
-}
-
+        -webkit-animation-play-state: paused;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation: 8s movebg infinite alternate;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url(http://media-cache-ak0.pinimg.com/236x/ac/2f/cf/ac2fcfad5efdd3c7d27c9c85a18c56c4.jpg);
+        color: transparent;
+        font-family: "Tracks"!important;
+        font-style: normal !important;
+        font-weight: bold!important;
+        width: -moz-min-content;
+        width: -webkit-min-content;
+        width: fit-content;
+  }
 #small-link:hover {
-    color: cornflowerblue;
-    font-weight: 900;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-
+        color: cornflowerblue;
+        font-weight: 900;
+        width: -moz-min-content;
+        width: -webkit-min-content;
+        width: min-content;
+  }
 /* ▰▰▰ BARS ▰▰▰*/
 
-*{
-    box-sizing: border-box;
-}
-
 .bars {
-    background-color: var(--main--b);
-    border-radius: 2rem;
-    box-shadow: inset 3px 3px 12px var(--main-darken), inset -3px -3px 12px var(--main-lighten);
-    display: grid;
-    height: auto;
-    width: 100%;
-}
-
+        background-color: var(--main--b);
+        border-radius: 2rem;
+        box-shadow: inset .2em .2em .5em var(--main-darken), inset -.2em -.2em .5em var(--main-lighten);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 100%;
+        width: 100%;
+  }
 .bars .bars-progres {
-    align-content: center;
-    padding: 2em;
-    text-align: center;
-}
-
-.bars .bars-progres .progres {
-    align-content: center;
-    float: left;
-    font-size: var(--font-normal);
-    position: relative;
-    text-align: center;
-    width: 50%;
-}
-
-.bars .bars-progres .progres:nth-child(odd) {
-    padding-right: .75em;
-}
-
-.bars .bars-progres .progres:nth-child(even) {
-    padding-left: .75em;
-}
-
-.bars .bars-progres .progres p {
-    float: none;
-    margin-bottom: 1em;
-}
-
-.bars .bars-progres .progres progress {
-    -webkit-appearance: none;
-    width: 100% !important;
-}
-
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: .5em;
+        height: 100%;
+        justify-content: space-between;
+        padding: 1em;
+        width: 100%;
+  }
+.bars .bars-progres .time{
+        border-radius: 1em;
+        box-shadow: .2em .2em .5em var(--main-darken), -.2em -.2em .5em var(--main-lighten);
+        padding: .1em;
+        width: -moz-min-content;
+        width: -webkit-min-content;
+        width: 100%;
+        width: fit-content;
+  }
+.bars .bars-progres .left{
+        font-family: "Tracks"!important;
+        font-style: normal;
+        font-weight: bold;;
+        text-align:center;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        width: fit-content;
+  }
+.bars .bars-progres progress {
+        -webkit-appearance: none;
+        width: 100% !important;
+  }
 ::-webkit-progress-value {
-    background-image: linear-gradient(to right, #8490ff, #a3eeff);
-    border-radius: 15px;
-    position: absolute;
-}
-
+        background-image: linear-gradient(to right, #8490ff, #a3eeff);
+        border-radius: 10em;
+        position: absolute;
+  }
 ::-webkit-progress-bar {
-    background-color: var(--main--b);
-    border: 0px solid #81A1C1;
-    border-radius: 15px;
-    box-shadow: 3px 3px 12px var(--main-darken), -3px -3px 12px var(--main-lighten);
-    height: 20px !important;
-    position: relative;
-    top: -15px;
-}
+        background-color: var(--main--b);
+        border-radius: 10em;
+        border: 0px solid #81A1C1;
+        box-shadow: .2em .2em .5em var(--main-darken), -.2em -.2em .5em var(--main-lighten);
+        height: 1.3em !important;
+        position: relative;
+        top: 0em;
+  }
