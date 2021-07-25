@@ -4,27 +4,27 @@
 
 | Replace this  |   with your personalized template as usual. Example:|
 |-|-|
-|{{yourMonth}}  |`<% tp.date.now('YY-MM-00', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`      |
-|{{yourWeek}}   |`<% tp.date.now('YY-[w]ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`      |
-|{{yourQuarter}}|`<% tp.date.now('YY-[Quarter]Q', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>` |
-|{{yourYear}}   |`<% tp.date.now('YYYY', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`          |
-|{{yourPrevD}}  |`<% tp.date.now('YY-MM-DD', -1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`     |
-|{{yourNextD}}  |`<% tp.date.now('YY-MM-DD', 1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>`      |
+|{{yourMonth}}  |`<% moment(tp.file.title,'YY-MM-DD').format('YY-MM-00') %>`      |
+|{{yourWeek}}   |`<% moment(tp.file.title,'YY-MM-DD').format('YY-[w]ww') %>`      |
+|{{yourQuarter}}|`<% moment(tp.file.title,'YY-MM-DD').format('YY-[Q]Q') %>` |
+|{{yourYear}}   |`<% moment(tp.file.title,'YY-MM-DD').format('YYYY') %>`          |
+|{{yourPrevD}}  |`<% moment(tp.file.title,'YY-MM-DD').subtract(1,'d').format('YY-MM-DD') %>`     |
+|{{yourNextD}}  |`<% moment(tp.file.title,'YY-MM-DD').add(1,'d').format('YY-MM-DD') %>`      |
 
 ### HTML Templater
 ```
 <div class='daily'>
 <div class='todayday'>
-    <% tp.date.now('dddd DD', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></div>
+    <% <% moment(tp.file.title,'YY-MM-DD').format('dddd DD') %></div>
 <div class='todaymonth'>
-    ෴<% tp.date.now('MMMM YYYY', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>෴</div>
+    ෴<% moment(tp.file.title,'YY-MM-DD').format('MMMM YYYY') %>෴</div>
 </div>
 <div class='bars'>
 <div class='bars-progres'>
     <div class='time'>
         <a class='internal-link' id='big-link'
             href='{{yourWeek}}.md'>
-            week <% tp.date.now('ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
+            week <% moment(tp.file.title,'YY-MM-DD').format('ww') %></a>
     </div>
     <div class='left'><a class='internal-link' id='small-link'
             href='{{yourPrevD}}.md'>yesterday</a>
@@ -36,18 +36,18 @@
 <div class='bars-progres'>
     <div class='time'>
         <a class='internal-link' id='big-link'
-            href='{{yourMonth}}.md'><% tp.date.now('MMMM', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
+            href='{{yourMonth}}.md'><% moment(tp.file.title,'YY-MM-DD').format('MMMM') %></a>
     </div>
     <div class='left'>🝮
         <% moment(moment(tp.file.title, 'YY-MM-DD').endOf('month')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %>
         days left</div>
-    <progress value='<% tp.date.now('DD', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>'
+    <progress value='<% moment(tp.file.title,'YY-MM-DD').format('DD') %>'
         max='<% moment(tp.file.title, 'YY-MM-DD').daysInMonth() %>'>
 </div>
 <div class='bars-progres'>
     <div class='time'>
         <a class='internal-link' id='big-link'
-            href='{{yourQuarter}}.md'><% tp.date.now('Qo [quarter]', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
+            href='{{yourQuarter}}.md'><% moment(tp.file.title,'YY-MM-DD').format('Qo [quarter]') %></a>
     </div>
     <div class='left'>🝮
         <% moment(moment('21-09-30', 'YY-MM-DD')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %> days left</div>
@@ -68,40 +68,40 @@
 ### Mine
 ```<div class='daily'>
 <div class='todayday'>
-    <% tp.date.now('dddd DD', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></div>
+    <% moment(tp.file.title,'YY-MM-DD').format('dddd DD') %></div>
 <div class='todaymonth'>
-    ෴<% tp.date.now('MMMM YYYY', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>෴</div>
+    ෴<% moment(tp.file.title,'YY-MM-DD').format('MMMM YYYY') %>෴</div>
 </div>
 <div class='bars'>
 <div class='bars-progres'>
     <div class='time'>
         <a class='internal-link' id='big-link'
-            href='<% tp.date.now('YY-[w]ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>
-            week <% tp.date.now('ww', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
+            href='<% moment(tp.file.title,'YY-MM-DD').format('YY-[w]ww') %>.md'>
+            week <% moment(tp.file.title,'YY-MM-DD').format('ww') %></a>
     </div>
     <div class='left'><a class='internal-link' id='small-link'
-            href='<% tp.date.now('YY-MM-DD', -1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>yesterday</a>
+            href='<% moment(tp.file.title,'YY-MM-DD').subtract(1,'d').format('YY-MM-DD') %>.md'>yesterday</a>
         🟊 <a class='internal-link' id='small-link'
-            href='<% tp.date.now('YY-MM-DD', 1, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>tomorrow</a>
+            href='<% moment(tp.file.title,'YY-MM-DD').add(1,'d').format('YY-MM-DD') %>.md'>tomorrow</a>
     </div>
     <progress value='<% moment(tp.file.title, 'YY-MM-DD').isoWeekday() %>' max='7'>
 </div>
 <div class='bars-progres'>
     <div class='time'>
         <a class='internal-link' id='big-link'
-            href='<% tp.date.now('YY-MM-00', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>
-            <% tp.date.now('MMMM', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
+            href='<% moment(tp.file.title,'YY-MM-DD').format('YY-MM-00') %>.md'>
+            <% moment(tp.file.title,'YY-MM-DD').format('MMMM') %></a>
     </div>
     <div class='left'>🝮
         <% moment(moment(tp.file.title, 'YY-MM-DD').endOf('month')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %>
         days left</div>
-    <progress value='<% tp.date.now('DD', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>'
+    <progress value='<% moment(tp.file.title,'YY-MM-DD').format('DD') %>'
         max='<% moment(tp.file.title, 'YY-MM-DD').daysInMonth() %>'>
 </div>
 <div class='bars-progres'>
     <div class='time'>
         <a class='internal-link' id='big-link'
-            href='<% tp.date.now('YY-[Quarter]Q', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'><% tp.date.now('Qo [quarter]', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %></a>
+            href='<% moment(tp.file.title,'YY-MM-DD').format('YY-[Q]Q') %>.md'><% moment(tp.file.title,'YY-MM-DD').format('Qo [quarter]') %></a>
     </div>
     <div class='left'>🝮
         <% moment(moment('21-09-30', 'YY-MM-DD')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %> days left</div>
@@ -110,7 +110,7 @@
 </div>
 <div class='bars-progres'>
     <div class='time'><a class='internal-link' id='big-link'
-            href='<% tp.date.now('YYYY', 0, tp.date.now('YY-MM-DD', 0, tp.file.title, 'YY-MM-DD'), 'YY-MM-DD') %>.md'>Day
+            href='<% moment(tp.file.title,'YY-MM-DD').format('YYYY') %>.md'>Day
             #<% moment(tp.file.title, 'YY-MM-DD').dayOfYear() %></a></div>
     <div class='left'>🝮
         <% moment(moment(tp.file.title, 'YY-MM-DD').endOf('year')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %>
