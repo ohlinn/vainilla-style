@@ -50,9 +50,9 @@
             href='{{yourQuarter}}.md'><% moment(tp.file.title,'YY-MM-DD').format('Qo [quarter]') %></a>
     </div>
     <div class='left'>🝮
-        <% moment(moment('21-09-30', 'YY-MM-DD')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %> days left</div>
-    <progress value='<% moment(moment(tp.file.title, 'YY-MM-DD')).diff(moment('21-06-30', 'YY-MM-DD'), 'days') %>'
-        max='<% moment(moment('21-09-30', 'YY-MM-DD')).diff(moment('21-06-30', 'YY-MM-DD'), 'days') %>'>
+        <% moment(moment(tp.file.title, 'YY-MM-DD').endOf('quarter')).diff(moment(tp.file.title,'YY-MM-DD'),'days')  %> days left</div>
+    <progress value='<% moment(tp.file.title,'YY-MM-DD').diff(moment(tp.file.title, 'YY-MM-DD').startOf('quarter'),'days')  %>'
+        max='<% moment(moment(tp.file.title, 'YY-MM-DD').endOf('quarter')).diff(moment(moment(tp.file.title,'YY-MM-DD').startOf('quarter')), 'days')  %>'>
 </div>
 <div class='bars-progres'>
     <div class='time'><a class='internal-link' id='big-link'
@@ -61,7 +61,7 @@
     <div class='left'>🝮
         <% moment(moment(tp.file.title, 'YY-MM-DD').endOf('year')).diff(moment(tp.file.title, 'YY-MM-DD'), 'days') %>
         days left</div>
-    <progress value='<% moment(tp.file.title, 'YY-MM-DD').dayOfYear() %>' max='365'>
+    <progress value='<% moment(tp.file.title, 'YY-MM-DD').dayOfYear() %>' max='<% moment(moment(tp.file.title,'YY-MM-DD').endOf('year')).diff(moment(tp.file.title,'YY-MM-DD').startOf('year'),'days') %>'>
 </div></div>
 ```
 
